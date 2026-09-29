@@ -1,0 +1,25 @@
+name: ntv3
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip>=24
+  - setuptools>=69
+  - numpy>=1.24,<3
+  - pandas>=1.5,<3
+  - scipy>=1.9
+  - scikit-learn>=1.2
+  # The shared benchmark package and result readers import HDF5 helpers.
+  - h5py>=3.8
+  - pytorch=2.5
+  - pytorch-cuda=12.1
+  - pip:
+      # NTv3's official PyTorch notebooks require Transformers >=4.55 and
+      # execute the model repository's custom code via trust_remote_code.
+      - transformers>=4.55,<5
+      - huggingface-hub>=0.23,<2
+      - safetensors>=0.4
+      - pyfaidx>=0.7,<1
+      - tqdm>=4.65

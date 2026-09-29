@@ -1,0 +1,18 @@
+{
+  "name": "ntv3-100m-pre",
+  "root_dir": ".",
+  "model_id": "InstaDeepAI/NTv3_100M_pre",
+  "checkpoint_type": "pre",
+  "revision": "5c685dca15891f5c5b80e0c930e23b87a217e441",
+  "code_revision": "0ecff3637f0d3ba5b686d1095083218157c2ca34",
+  "cache_dir": ".benchmark_deps/ntv3_hf",
+  "local_files_only": true,
+  "fasta_path": "reference/hg38/assembly/ucsc/hg38.fa",
+  "gtf_path": "reference/hg38/genes/gencode41/gencode41_basic_nort.gtf",
+  "sequence_length": 32768,
+  "device": "cuda",
+  "dtype": "float32",
+  "species": "human",
+  "strict_reference": true,
+  "aggregation": "max_abs"
+}

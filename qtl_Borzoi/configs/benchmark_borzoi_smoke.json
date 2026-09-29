@@ -1,0 +1,26 @@
+{
+  "data": {
+    "class": "qtl_benchmark.data.gtex_eqtl:GTExEQTLDataModule",
+    "config": {
+      "data_dir": "data/eqtl",
+      "tissues": ["Adipose_Subcutaneous"],
+      "max_variants": 1,
+      "pip_threshold": 0.9,
+      "name": "gtex-eqtl-smoke"
+    }
+  },
+  "model": {
+    "class": "qtl_benchmark.models.borzoi:BorzoiSEDModelAdapter",
+    "config": {
+      "name": "borzoi-smoke",
+      "artifact_dir": "outputs/borzoi_smoke_e2e/experiment/max_1/ensemble/eqtl_sed",
+      "statistic": "SED",
+      "transform": "arcsinh"
+    }
+  },
+  "evaluator": {
+    "class": "qtl_benchmark.evaluation.gtex_eqtl:GTExEQTLEvaluator",
+    "config": {"min_variants": 0, "missing_score": 0.0}
+  },
+  "run": {"output_dir": "outputs/unified"}
+}

@@ -1,0 +1,23 @@
+Package purpose: extensible eQTL/sQTL/paQTL/iPaQTL benchmark
+Packaged date: 2026-09-17
+
+borzoi-paper commit: 7c6077c233364769a42b677e9ef555d41188f75c
+  copied: data/qtl/{eqtl,sqtl,paqtl,ipaqtl}
+  copied: analysis/eqtl -> docs/paper_eqtl
+  adapted: tools/qtl_benchmark -> benchmark/qtl_benchmark
+
+borzoi commit: 5c9358222b5026abb733ed5fb84f3f6c77239b37
+  copied: src/borzoi
+  copied: src/scripts -> src/borzoi_scripts
+  copied: examples/params_pred.json -> configs/params_pred.json
+  copied: examples/targets_gtex.txt -> configs/targets_gtex.txt
+  copied: examples/targets_human.txt -> configs/targets_human.txt
+  copied: examples/targets_rna.txt -> configs/targets_rna.txt
+  copied: examples/saved_models/f3c0..f3c3 -> models/replicate_0..3
+  copied: hg38 FASTA/FAI, gencode41_basic_nort.gtf, and PolyADB -> reference/hg38
+
+baskerville commit: 544073b87245d9f43ba63442c75bdbf32a9f8720
+  copied: src/baskerville
+
+The source Git histories and unrelated training/tutorial assets are intentionally
+not included. Upstream license files are under licenses/.

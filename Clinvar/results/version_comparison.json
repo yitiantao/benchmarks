@@ -1,0 +1,128 @@
+{
+  "2025-03_vs_2026-02": {
+    "raw_unique_variation_ids": {
+      "old": 3452550,
+      "latest": 4370172,
+      "shared": 3451855,
+      "only_old": 695,
+      "only_latest": 918317,
+      "net_change": 917622
+    },
+    "candidate_unique_variation_ids": {
+      "old": 1283751,
+      "latest": 1345649,
+      "shared": 1273735,
+      "only_old": 10016,
+      "only_latest": 71914,
+      "net_change": 61898
+    },
+    "candidate_unique_variant_keys": {
+      "old": 1284123,
+      "latest": 1346039,
+      "shared": 1274107,
+      "only_old": 10016,
+      "only_latest": 71932,
+      "net_change": 61916
+    },
+    "exact_pb_unique_variation_ids_pre_mane": {
+      "old": 240206,
+      "latest": 241983,
+      "shared": 233150,
+      "only_old": 7056,
+      "only_latest": 8833,
+      "net_change": 1777
+    },
+    "exact_pb_unique_variant_keys_pre_mane": {
+      "old": 240356,
+      "latest": 242137,
+      "shared": 233299,
+      "only_old": 7057,
+      "only_latest": 8838,
+      "net_change": 1781
+    }
+  },
+  "2025-03_vs_2026-09-14": {
+    "raw_unique_variation_ids": {
+      "old": 3452550,
+      "latest": 4562367,
+      "shared": 3443060,
+      "only_old": 9490,
+      "only_latest": 1119307,
+      "net_change": 1109817
+    },
+    "candidate_unique_variation_ids": {
+      "old": 1283751,
+      "latest": 1436915,
+      "shared": 1270600,
+      "only_old": 13151,
+      "only_latest": 166315,
+      "net_change": 153164
+    },
+    "candidate_unique_variant_keys": {
+      "old": 1284123,
+      "latest": 1437333,
+      "shared": 1270974,
+      "only_old": 13149,
+      "only_latest": 166359,
+      "net_change": 153210
+    },
+    "exact_pb_unique_variation_ids_pre_mane": {
+      "old": 240206,
+      "latest": 245417,
+      "shared": 228483,
+      "only_old": 11723,
+      "only_latest": 16934,
+      "net_change": 5211
+    },
+    "exact_pb_unique_variant_keys_pre_mane": {
+      "old": 240356,
+      "latest": 245571,
+      "shared": 228632,
+      "only_old": 11724,
+      "only_latest": 16939,
+      "net_change": 5215
+    }
+  },
+  "2026-02_vs_2026-09-14": {
+    "raw_unique_variation_ids": {
+      "old": 4370172,
+      "latest": 4562367,
+      "shared": 4361233,
+      "only_old": 8939,
+      "only_latest": 201134,
+      "net_change": 192195
+    },
+    "candidate_unique_variation_ids": {
+      "old": 1345649,
+      "latest": 1436915,
+      "shared": 1341648,
+      "only_old": 4001,
+      "only_latest": 95267,
+      "net_change": 91266
+    },
+    "candidate_unique_variant_keys": {
+      "old": 1346039,
+      "latest": 1437333,
+      "shared": 1342039,
+      "only_old": 4000,
+      "only_latest": 95294,
+      "net_change": 91294
+    },
+    "exact_pb_unique_variation_ids_pre_mane": {
+      "old": 241983,
+      "latest": 245417,
+      "shared": 236626,
+      "only_old": 5357,
+      "only_latest": 8791,
+      "net_change": 3434
+    },
+    "exact_pb_unique_variant_keys_pre_mane": {
+      "old": 242137,
+      "latest": 245571,
+      "shared": 236780,
+      "only_old": 5357,
+      "only_latest": 8791,
+      "net_change": 3434
+    }
+  }
+}

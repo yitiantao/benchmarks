@@ -1,0 +1,512 @@
+release,section,value,count,fraction
+2025-03,assembly_raw,GRCh37,3439892,0.5029082606591024
+2025-03,assembly_raw,GRCh38,3388341,0.4953715636508134
+2025-03,assembly_raw,na,6995,0.0010226609682252878
+2025-03,assembly_raw,NCBI36,4771,0.0006975147218588775
+2025-03,origin_raw,germline,6668457,0.9749207565673621
+2025-03,origin_raw,unknown,136170,0.019907897647353456
+2025-03,origin_raw,somatic,11876,0.0017362575637803455
+2025-03,origin_raw,not provided,9700,0.0014181288622995413
+2025-03,origin_raw,not applicable,8809,0.0012878656853604804
+2025-03,origin_raw,germline/somatic,4973,0.000727046889919136
+2025-03,origin_raw,tested-inconclusive,14,2.04678392496841e-06
+2025-03,type_after_grch38_nonsomatic_basic_chromosome,single nucleotide variant,3096213,0.9161496665426873
+2025-03,type_after_grch38_nonsomatic_basic_chromosome,Deletion,140074,0.04144700264203412
+2025-03,type_after_grch38_nonsomatic_basic_chromosome,Duplication,63141,0.01868301893156957
+2025-03,type_after_grch38_nonsomatic_basic_chromosome,Microsatellite,35724,0.01057050360797883
+2025-03,type_after_grch38_nonsomatic_basic_chromosome,Indel,16293,0.004820994717411238
+2025-03,type_after_grch38_nonsomatic_basic_chromosome,Insertion,12708,0.003760216097027068
+2025-03,type_after_grch38_nonsomatic_basic_chromosome,copy number gain,6939,0.0020532058150197377
+2025-03,type_after_grch38_nonsomatic_basic_chromosome,copy number loss,6738,0.0019937311978099137
+2025-03,type_after_grch38_nonsomatic_basic_chromosome,Inversion,1387,0.00041040444810958005
+2025-03,type_after_grch38_nonsomatic_basic_chromosome,Variation,354,0.0001047463407576001
+2025-03,type_after_grch38_nonsomatic_basic_chromosome,Translocation,18,5.326085123267801e-06
+2025-03,type_after_grch38_nonsomatic_basic_chromosome,Complex,4,1.1835744718372893e-06
+2025-03,clinical_significance_after_snv,Uncertain significance,1613402,0.521088826899183
+2025-03,clinical_significance_after_snv,Likely benign,940735,0.303834070847193
+2025-03,clinical_significance_after_snv,Benign,180477,0.058289594417438334
+2025-03,clinical_significance_after_snv,Conflicting classifications of pathogenicity,134369,0.04339785408820388
+2025-03,clinical_significance_after_snv,Pathogenic,79297,0.02561096410356781
+2025-03,clinical_significance_after_snv,Likely pathogenic,65599,0.02118684987111675
+2025-03,clinical_significance_after_snv,Benign/Likely benign,47188,0.015240553540728626
+2025-03,clinical_significance_after_snv,Pathogenic/Likely pathogenic,22674,0.007323139590202612
+2025-03,clinical_significance_after_snv,not provided,8827,0.0028509020535731878
+2025-03,clinical_significance_after_snv,other,1496,0.00048317089295859167
+2025-03,clinical_significance_after_snv,no classification for the single variant,479,0.00015470511880158117
+2025-03,clinical_significance_after_snv,risk factor,310,0.00010012231070666004
+2025-03,clinical_significance_after_snv,association,275,8.881817885268229e-05
+2025-03,clinical_significance_after_snv,drug response,160,5.16760313324697e-05
+2025-03,clinical_significance_after_snv,Uncertain significance/Uncertain risk allele,145,4.6831403395050666e-05
+2025-03,clinical_significance_after_snv,Affects,109,3.5204296345244985e-05
+2025-03,clinical_significance_after_snv,no classifications from unflagged records,106,3.4235370757761176e-05
+2025-03,clinical_significance_after_snv,Likely risk allele,80,2.583801566623485e-05
+2025-03,clinical_significance_after_snv,Pathogenic; other,65,2.0993387728815814e-05
+2025-03,clinical_significance_after_snv,Pathogenic; drug response,53,1.7117685378880588e-05
+2025-03,clinical_significance_after_snv,protective,34,1.0981156658149811e-05
+2025-03,clinical_significance_after_snv,Uncertain risk allele,33,1.0658181462321876e-05
+2025-03,clinical_significance_after_snv,Conflicting classifications of pathogenicity; other,19,6.1365287207307764e-06
+2025-03,clinical_significance_after_snv,Benign; risk factor,18,5.813553524902841e-06
+2025-03,clinical_significance_after_snv,Pathogenic; risk factor,16,5.16760313324697e-06
+2025-03,clinical_significance_after_snv,Conflicting classifications of pathogenicity; risk factor,14,4.521652741591098e-06
+2025-03,clinical_significance_after_snv,Likely pathogenic; drug response,14,4.521652741591098e-06
+2025-03,clinical_significance_after_snv,Likely pathogenic/Likely risk allele,13,4.198677545763163e-06
+2025-03,clinical_significance_after_snv,Benign; association,12,3.875702349935228e-06
+2025-03,clinical_significance_after_snv,Benign; other,12,3.875702349935228e-06
+2025-03,clinical_significance_after_snv,Benign/Likely benign; other,11,3.552727154107292e-06
+2025-03,clinical_significance_after_snv,Uncertain significance; drug response,10,3.229751958279356e-06
+2025-03,clinical_significance_after_snv,confers sensitivity,10,3.229751958279356e-06
+2025-03,clinical_significance_after_snv,Likely benign; other,9,2.9067767624514203e-06
+2025-03,clinical_significance_after_snv,Uncertain significance; risk factor,9,2.9067767624514203e-06
+2025-03,clinical_significance_after_snv,Uncertain significance; association,8,2.583801566623485e-06
+2025-03,clinical_significance_after_snv,Pathogenic/Likely pathogenic; other,6,1.937851174967614e-06
+2025-03,clinical_significance_after_snv,Pathogenic/Likely risk allele,6,1.937851174967614e-06
+2025-03,clinical_significance_after_snv,Uncertain significance; other,6,1.937851174967614e-06
+2025-03,clinical_significance_after_snv,Conflicting classifications of pathogenicity; association,5,1.614875979139678e-06
+2025-03,clinical_significance_after_snv,Likely pathogenic; association,5,1.614875979139678e-06
+2025-03,clinical_significance_after_snv,"Pathogenic/Likely pathogenic/Pathogenic, low penetrance",5,1.614875979139678e-06
+2025-03,clinical_significance_after_snv,Pathogenic; Affects,5,1.614875979139678e-06
+2025-03,clinical_significance_after_snv,Benign; drug response,4,1.2919007833117425e-06
+2025-03,clinical_significance_after_snv,Benign; protective,4,1.2919007833117425e-06
+2025-03,clinical_significance_after_snv,Likely benign; drug response,4,1.2919007833117425e-06
+2025-03,clinical_significance_after_snv,Likely benign; drug response; other,4,1.2919007833117425e-06
+2025-03,clinical_significance_after_snv,"Likely pathogenic, low penetrance",4,1.2919007833117425e-06
+2025-03,clinical_significance_after_snv,Likely pathogenic; risk factor,4,1.2919007833117425e-06
+2025-03,clinical_significance_after_snv,Pathogenic/Likely pathogenic/Likely risk allele,4,1.2919007833117425e-06
+2025-03,clinical_significance_after_snv,Pathogenic/Likely pathogenic; risk factor,4,1.2919007833117425e-06
+2025-03,clinical_significance_after_snv,Pathogenic; association,4,1.2919007833117425e-06
+2025-03,clinical_significance_after_snv,protective; risk factor,4,1.2919007833117425e-06
+2025-03,clinical_significance_after_snv,Benign/Likely benign; drug response,2,6.459503916558712e-07
+2025-03,clinical_significance_after_snv,Benign; Affects,2,6.459503916558712e-07
+2025-03,clinical_significance_after_snv,Conflicting classifications of pathogenicity; association; risk factor,2,6.459503916558712e-07
+2025-03,clinical_significance_after_snv,Conflicting classifications of pathogenicity; drug response,2,6.459503916558712e-07
+2025-03,clinical_significance_after_snv,Conflicting classifications of pathogenicity; other; risk factor,2,6.459503916558712e-07
+2025-03,clinical_significance_after_snv,Conflicting classifications of pathogenicity; protective,2,6.459503916558712e-07
+2025-03,clinical_significance_after_snv,Likely benign; risk factor,2,6.459503916558712e-07
+2025-03,clinical_significance_after_snv,Likely pathogenic; Affects,2,6.459503916558712e-07
+2025-03,clinical_significance_after_snv,association not found,2,6.459503916558712e-07
+2025-03,clinical_significance_after_snv,drug response; risk factor,2,6.459503916558712e-07
+2025-03,clinical_significance_after_snv,Affects; risk factor,1,3.229751958279356e-07
+2025-03,clinical_significance_after_snv,Benign/Likely benign; association,1,3.229751958279356e-07
+2025-03,clinical_significance_after_snv,Benign/Likely benign; drug response; other,1,3.229751958279356e-07
+2025-03,clinical_significance_after_snv,Benign/Likely benign; other; risk factor,1,3.229751958279356e-07
+2025-03,clinical_significance_after_snv,Benign/Likely benign; risk factor,1,3.229751958279356e-07
+2025-03,clinical_significance_after_snv,Benign; Affects; association; other,1,3.229751958279356e-07
+2025-03,clinical_significance_after_snv,Benign; confers sensitivity,1,3.229751958279356e-07
+2025-03,clinical_significance_after_snv,Conflicting classifications of pathogenicity; Affects,1,3.229751958279356e-07
+2025-03,clinical_significance_after_snv,Likely benign; Affects; association,1,3.229751958279356e-07
+2025-03,clinical_significance_after_snv,Likely benign; association,1,3.229751958279356e-07
+2025-03,clinical_significance_after_snv,Likely benign; protective,1,3.229751958279356e-07
+2025-03,clinical_significance_after_snv,Likely pathogenic; other,1,3.229751958279356e-07
+2025-03,clinical_significance_after_snv,"Pathogenic/Likely pathogenic/Pathogenic, low penetrance; other",1,3.229751958279356e-07
+2025-03,clinical_significance_after_snv,"Pathogenic/Likely pathogenic/Pathogenic, low penetrance; risk factor",1,3.229751958279356e-07
+2025-03,clinical_significance_after_snv,Pathogenic/Likely pathogenic; association,1,3.229751958279356e-07
+2025-03,clinical_significance_after_snv,Pathogenic/Likely risk allele; risk factor,1,3.229751958279356e-07
+2025-03,clinical_significance_after_snv,"Pathogenic/Pathogenic, low penetrance; other",1,3.229751958279356e-07
+2025-03,clinical_significance_after_snv,"Pathogenic/Pathogenic, low penetrance; other; risk factor",1,3.229751958279356e-07
+2025-03,clinical_significance_after_snv,Pathogenic; association; protective,1,3.229751958279356e-07
+2025-03,clinical_significance_after_snv,Pathogenic; confers sensitivity,1,3.229751958279356e-07
+2025-03,clinical_significance_after_snv,Uncertain risk allele; risk factor,1,3.229751958279356e-07
+2025-03,clinical_significance_after_snv,Uncertain significance; Affects,1,3.229751958279356e-07
+2025-03,clinical_significance_after_snv,association; drug response; risk factor,1,3.229751958279356e-07
+2025-03,clinical_significance_after_snv,association; risk factor,1,3.229751958279356e-07
+2025-03,clinical_significance_after_snv,confers sensitivity; other,1,3.229751958279356e-07
+2025-03,clinical_significance_after_snv,drug response; other,1,3.229751958279356e-07
+2025-03,clinical_significance_after_snv,other; risk factor,1,3.229751958279356e-07
+2025-03,review_status_after_selected_significance,"criteria provided, single submitter",984794,0.7371378099807631
+2025-03,review_status_after_selected_significance,"criteria provided, multiple submitters, no conflicts",289747,0.21688136709656655
+2025-03,review_status_after_selected_significance,no assertion criteria provided,51837,0.03880102098101005
+2025-03,review_status_after_selected_significance,reviewed by expert panel,9573,0.007165580065420631
+2025-03,review_status_after_selected_significance,practice guideline,19,1.4221876239735923e-05
+2025-03,chromosome_after_grch38_nonsomatic,2,311251,0.09201664660784124
+2025-03,chromosome_after_grch38_nonsomatic,1,298963,0.08838388541665743
+2025-03,chromosome_after_grch38_nonsomatic,17,207357,0.06130195819663917
+2025-03,chromosome_after_grch38_nonsomatic,11,199975,0.05911958164119329
+2025-03,chromosome_after_grch38_nonsomatic,19,185342,0.054793556697297394
+2025-03,chromosome_after_grch38_nonsomatic,3,184037,0.05440775320165165
+2025-03,chromosome_after_grch38_nonsomatic,16,179118,0.05295352531270039
+2025-03,chromosome_after_grch38_nonsomatic,5,167701,0.04957826208680963
+2025-03,chromosome_after_grch38_nonsomatic,7,163654,0.048381827798013984
+2025-03,chromosome_after_grch38_nonsomatic,12,152359,0.04504263202535601
+2025-03,chromosome_after_grch38_nonsomatic,6,150389,0.04446023134610535
+2025-03,chromosome_after_grch38_nonsomatic,9,150388,0.044459935711242786
+2025-03,chromosome_after_grch38_nonsomatic,X,127660,0.03774074655489304
+2025-03,chromosome_after_grch38_nonsomatic,10,125539,0.03711370501139524
+2025-03,chromosome_after_grch38_nonsomatic,15,120489,0.035620748955448124
+2025-03,chromosome_after_grch38_nonsomatic,4,118602,0.03506288596979026
+2025-03,chromosome_after_grch38_nonsomatic,8,115469,0.034136661945377914
+2025-03,chromosome_after_grch38_nonsomatic,14,107597,0.031809424307275784
+2025-03,chromosome_after_grch38_nonsomatic,22,74078,0.021900039349000207
+2025-03,chromosome_after_grch38_nonsomatic,20,70697,0.020900497878672045
+2025-03,chromosome_after_grch38_nonsomatic,13,69404,0.020518242001377068
+2025-03,chromosome_after_grch38_nonsomatic,18,58569,0.017315038265498437
+2025-03,chromosome_after_grch38_nonsomatic,21,39919,0.01180144807868381
+2025-03,chromosome_after_grch38_nonsomatic,MT,2955,0.0008736010188759903
+2025-03,chromosome_after_grch38_nonsomatic,Y,1036,0.00030627771761608324
+2025-03,chromosome_after_grch38_nonsomatic,Un,3,8.869045876913607e-07
+2025-03,label_after_star_filter,Likely benign,913539,0.7114052827861288
+2025-03,label_after_star_filter,Benign,174039,0.13553035394308846
+2025-03,label_after_star_filter,Pathogenic,66321,0.0516465194804588
+2025-03,label_after_star_filter,Likely pathogenic,60930,0.04744835620609392
+2025-03,label_after_star_filter,Benign/Likely benign,47079,0.03666209029750034
+2025-03,label_after_star_filter,Pathogenic/Likely pathogenic,22225,0.017307397286729646
+2025-03,base_substitution_after_canonical_alleles,G>A,304628,0.23722649621570518
+2025-03,base_substitution_after_canonical_alleles,C>T,304344,0.23700533360122045
+2025-03,base_substitution_after_canonical_alleles,A>G,147369,0.11476237089437694
+2025-03,base_substitution_after_canonical_alleles,T>C,146008,0.1137025035763708
+2025-03,base_substitution_after_canonical_alleles,C>A,63273,0.04927331727568154
+2025-03,base_substitution_after_canonical_alleles,G>T,62936,0.04901088135638097
+2025-03,base_substitution_after_canonical_alleles,C>G,62032,0.048306898949711206
+2025-03,base_substitution_after_canonical_alleles,G>C,61754,0.048090408784828245
+2025-03,base_substitution_after_canonical_alleles,T>G,35757,0.02784546340187038
+2025-03,base_substitution_after_canonical_alleles,A>C,35702,0.02780263261385397
+2025-03,base_substitution_after_canonical_alleles,A>T,30044,0.023396512639365544
+2025-03,base_substitution_after_canonical_alleles,T>A,29785,0.023194818564888253
+2025-03,base_substitution_after_canonical_alleles,G>G,135,0.00010513011604028586
+2025-03,base_substitution_after_canonical_alleles,C>C,124,9.656395843700331e-05
+2025-03,base_substitution_after_canonical_alleles,T>T,117,9.111276723491441e-05
+2025-03,base_substitution_after_canonical_alleles,A>A,115,8.955528403431758e-05
+2026-02,assembly_raw,GRCh37,4356997,0.50229699872437
+2026-02,assembly_raw,GRCh38,4303534,0.49613350941216683
+2026-02,assembly_raw,na,8843,0.001019466471911641
+2026-02,assembly_raw,NCBI36,4771,0.0005500253915515593
+2026-02,origin_raw,germline,8012064,0.9236719008040561
+2026-02,origin_raw,not applicable,490065,0.0564972109643083
+2026-02,origin_raw,unknown,144270,0.016632186803425583
+2026-02,origin_raw,somatic,13665,0.0015753714054814625
+2026-02,origin_raw,not provided,7652,0.0008821618730145737
+2026-02,origin_raw,germline/somatic,6429,0.0007411681497138911
+2026-02,type_after_grch38_nonsomatic_basic_chromosome,single nucleotide variant,3985389,0.9281880788964374
+2026-02,type_after_grch38_nonsomatic_basic_chromosome,Deletion,156508,0.03645035901186148
+2026-02,type_after_grch38_nonsomatic_basic_chromosome,Duplication,67014,0.015607408942807302
+2026-02,type_after_grch38_nonsomatic_basic_chromosome,Microsatellite,37952,0.00883893491206946
+2026-02,type_after_grch38_nonsomatic_basic_chromosome,Indel,17772,0.004139058580767771
+2026-02,type_after_grch38_nonsomatic_basic_chromosome,Insertion,13496,0.003143187857643587
+2026-02,type_after_grch38_nonsomatic_basic_chromosome,copy number gain,6945,0.0016174747829975336
+2026-02,type_after_grch38_nonsomatic_basic_chromosome,copy number loss,6744,0.001570662337874063
+2026-02,type_after_grch38_nonsomatic_basic_chromosome,Inversion,1441,0.00033560563892000663
+2026-02,type_after_grch38_nonsomatic_basic_chromosome,Variation,442,0.00010294079972424908
+2026-02,type_after_grch38_nonsomatic_basic_chromosome,Translocation,18,4.192159264788424e-06
+2026-02,type_after_grch38_nonsomatic_basic_chromosome,Complex,9,2.096079632394212e-06
+2026-02,clinical_significance_after_snv,Uncertain significance,2191266,0.5498248728041353
+2026-02,clinical_significance_after_snv,Likely benign,981608,0.24630167845598008
+2026-02,clinical_significance_after_snv,-,235291,0.05903840252482254
+2026-02,clinical_significance_after_snv,Benign,178910,0.044891477343867815
+2026-02,clinical_significance_after_snv,Conflicting classifications of pathogenicity,151900,0.03811422172340015
+2026-02,clinical_significance_after_snv,Pathogenic,82148,0.020612291547951783
+2026-02,clinical_significance_after_snv,Likely pathogenic,71643,0.01797641334384172
+2026-02,clinical_significance_after_snv,Benign/Likely benign,59606,0.014956131007537784
+2026-02,clinical_significance_after_snv,Pathogenic/Likely pathogenic,24214,0.006075692987560311
+2026-02,clinical_significance_after_snv,not provided,5045,0.0012658739209648042
+2026-02,clinical_significance_after_snv,other,1462,0.0003668399747176499
+2026-02,clinical_significance_after_snv,no classification for the single variant,487,0.0001221963527274251
+2026-02,clinical_significance_after_snv,risk factor,291,7.301671179400555e-05
+2026-02,clinical_significance_after_snv,association,269,6.749654801576458e-05
+2026-02,clinical_significance_after_snv,drug response,179,4.491405983205153e-05
+2026-02,clinical_significance_after_snv,no classifications from unflagged records,153,3.83902299123122e-05
+2026-02,clinical_significance_after_snv,Uncertain significance/Uncertain risk allele,143,3.58810645585663e-05
+2026-02,clinical_significance_after_snv,Affects,104,2.609531967895731e-05
+2026-02,clinical_significance_after_snv,"Likely pathogenic, low penetrance",80,2.007332282996716e-05
+2026-02,clinical_significance_after_snv,Likely risk allele,75,1.8818740153094215e-05
+2026-02,clinical_significance_after_snv,Pathogenic; other,63,1.580774172859914e-05
+2026-02,clinical_significance_after_snv,"Pathogenic, low penetrance",61,1.5305908657849962e-05
+2026-02,clinical_significance_after_snv,Pathogenic; drug response,38,9.534828344234402e-06
+2026-02,clinical_significance_after_snv,protective,34,8.531162202736043e-06
+2026-02,clinical_significance_after_snv,Uncertain risk allele,32,8.029329131986865e-06
+2026-02,clinical_significance_after_snv,Conflicting classifications of pathogenicity; other,19,4.767414172117201e-06
+2026-02,clinical_significance_after_snv,Benign; risk factor,18,4.516497636742612e-06
+2026-02,clinical_significance_after_snv,Conflicting classifications of pathogenicity; risk factor,14,3.5128314952442535e-06
+2026-02,clinical_significance_after_snv,Benign/Likely benign; other,12,3.0109984244950745e-06
+2026-02,clinical_significance_after_snv,Benign; other,12,3.0109984244950745e-06
+2026-02,clinical_significance_after_snv,Likely pathogenic/Likely risk allele,12,3.0109984244950745e-06
+2026-02,clinical_significance_after_snv,Benign; association,11,2.760081889120485e-06
+2026-02,clinical_significance_after_snv,Pathogenic; risk factor,11,2.760081889120485e-06
+2026-02,clinical_significance_after_snv,Likely pathogenic; drug response,10,2.509165353745895e-06
+2026-02,clinical_significance_after_snv,Uncertain significance; other,10,2.509165353745895e-06
+2026-02,clinical_significance_after_snv,confers sensitivity,10,2.509165353745895e-06
+2026-02,clinical_significance_after_snv,Likely benign; other,9,2.258248818371306e-06
+2026-02,clinical_significance_after_snv,"Pathogenic/Likely pathogenic/Pathogenic, low penetrance",7,1.7564157476221267e-06
+2026-02,clinical_significance_after_snv,Pathogenic/Likely risk allele,7,1.7564157476221267e-06
+2026-02,clinical_significance_after_snv,Uncertain significance; association,7,1.7564157476221267e-06
+2026-02,clinical_significance_after_snv,Likely pathogenic; association,6,1.5054992122475373e-06
+2026-02,clinical_significance_after_snv,Uncertain significance; drug response,6,1.5054992122475373e-06
+2026-02,clinical_significance_after_snv,Uncertain significance; risk factor,6,1.5054992122475373e-06
+2026-02,clinical_significance_after_snv,Conflicting classifications of pathogenicity; association,5,1.2545826768729476e-06
+2026-02,clinical_significance_after_snv,Pathogenic/Likely pathogenic; other,5,1.2545826768729476e-06
+2026-02,clinical_significance_after_snv,Pathogenic; Affects,5,1.2545826768729476e-06
+2026-02,clinical_significance_after_snv,Benign; drug response,4,1.003666141498358e-06
+2026-02,clinical_significance_after_snv,Benign; protective,4,1.003666141498358e-06
+2026-02,clinical_significance_after_snv,Likely benign; drug response,4,1.003666141498358e-06
+2026-02,clinical_significance_after_snv,Likely benign; drug response; other,4,1.003666141498358e-06
+2026-02,clinical_significance_after_snv,Pathogenic; association,4,1.003666141498358e-06
+2026-02,clinical_significance_after_snv,protective; risk factor,4,1.003666141498358e-06
+2026-02,clinical_significance_after_snv,Conflicting classifications of pathogenicity; other; risk factor,3,7.527496061237686e-07
+2026-02,clinical_significance_after_snv,"Likely pathogenic/Pathogenic, low penetrance",3,7.527496061237686e-07
+2026-02,clinical_significance_after_snv,Pathogenic/Likely pathogenic/Likely risk allele,3,7.527496061237686e-07
+2026-02,clinical_significance_after_snv,Pathogenic/Likely pathogenic; risk factor,3,7.527496061237686e-07
+2026-02,clinical_significance_after_snv,"Pathogenic/Pathogenic, low penetrance",3,7.527496061237686e-07
+2026-02,clinical_significance_after_snv,Benign/Likely benign; drug response,2,5.01833070749179e-07
+2026-02,clinical_significance_after_snv,Benign; Affects,2,5.01833070749179e-07
+2026-02,clinical_significance_after_snv,Conflicting classifications of pathogenicity; association; risk factor,2,5.01833070749179e-07
+2026-02,clinical_significance_after_snv,Conflicting classifications of pathogenicity; drug response,2,5.01833070749179e-07
+2026-02,clinical_significance_after_snv,Conflicting classifications of pathogenicity; protective,2,5.01833070749179e-07
+2026-02,clinical_significance_after_snv,Established risk allele,2,5.01833070749179e-07
+2026-02,clinical_significance_after_snv,Likely benign; risk factor,2,5.01833070749179e-07
+2026-02,clinical_significance_after_snv,"Likely pathogenic/Likely pathogenic, low penetrance",2,5.01833070749179e-07
+2026-02,clinical_significance_after_snv,"Pathogenic/Likely pathogenic, low penetrance",2,5.01833070749179e-07
+2026-02,clinical_significance_after_snv,Uncertain significance; Affects,2,5.01833070749179e-07
+2026-02,clinical_significance_after_snv,association not found,2,5.01833070749179e-07
+2026-02,clinical_significance_after_snv,Benign/Likely benign; association,1,2.509165353745895e-07
+2026-02,clinical_significance_after_snv,Benign/Likely benign; drug response; other,1,2.509165353745895e-07
+2026-02,clinical_significance_after_snv,Benign/Likely benign; other; risk factor,1,2.509165353745895e-07
+2026-02,clinical_significance_after_snv,Benign/Likely benign; risk factor,1,2.509165353745895e-07
+2026-02,clinical_significance_after_snv,Benign; Affects; association; other,1,2.509165353745895e-07
+2026-02,clinical_significance_after_snv,Benign; confers sensitivity,1,2.509165353745895e-07
+2026-02,clinical_significance_after_snv,Conflicting classifications of pathogenicity; Affects,1,2.509165353745895e-07
+2026-02,clinical_significance_after_snv,Established risk allele; association,1,2.509165353745895e-07
+2026-02,clinical_significance_after_snv,Likely benign; Affects; association,1,2.509165353745895e-07
+2026-02,clinical_significance_after_snv,Likely benign; association,1,2.509165353745895e-07
+2026-02,clinical_significance_after_snv,Likely pathogenic; Affects,1,2.509165353745895e-07
+2026-02,clinical_significance_after_snv,Likely pathogenic; risk factor,1,2.509165353745895e-07
+2026-02,clinical_significance_after_snv,"Pathogenic/Likely pathogenic/Pathogenic, low penetrance/Established risk allele; risk factor",1,2.509165353745895e-07
+2026-02,clinical_significance_after_snv,Pathogenic/Likely pathogenic; association,1,2.509165353745895e-07
+2026-02,clinical_significance_after_snv,"Pathogenic/Pathogenic, low penetrance; other",1,2.509165353745895e-07
+2026-02,clinical_significance_after_snv,Pathogenic; confers sensitivity,1,2.509165353745895e-07
+2026-02,clinical_significance_after_snv,Uncertain risk allele; risk factor,1,2.509165353745895e-07
+2026-02,clinical_significance_after_snv,VUS-mid,1,2.509165353745895e-07
+2026-02,clinical_significance_after_snv,association; drug response; risk factor,1,2.509165353745895e-07
+2026-02,clinical_significance_after_snv,association; risk factor,1,2.509165353745895e-07
+2026-02,clinical_significance_after_snv,confers sensitivity; other,1,2.509165353745895e-07
+2026-02,clinical_significance_after_snv,drug response; other,1,2.509165353745895e-07
+2026-02,clinical_significance_after_snv,drug response; risk factor,1,2.509165353745895e-07
+2026-02,clinical_significance_after_snv,other; risk factor,1,2.509165353745895e-07
+2026-02,review_status_after_selected_significance,"criteria provided, single submitter",1019067,0.7288790948474712
+2026-02,review_status_after_selected_significance,"criteria provided, multiple submitters, no conflicts",315905,0.22594839245877885
+2026-02,review_status_after_selected_significance,no assertion criteria provided,52080,0.037249781672506616
+2026-02,review_status_after_selected_significance,reviewed by expert panel,11058,0.007909141431155495
+2026-02,review_status_after_selected_significance,practice guideline,19,1.3589590087896038e-05
+2026-02,chromosome_after_grch38_nonsomatic,1,387767,0.09024454442990407
+2026-02,chromosome_after_grch38_nonsomatic,2,374616,0.08718392812217889
+2026-02,chromosome_after_grch38_nonsomatic,17,259035,0.060284901929251844
+2026-02,chromosome_after_grch38_nonsomatic,11,251712,0.05858062900540792
+2026-02,chromosome_after_grch38_nonsomatic,19,246007,0.05725291126260721
+2026-02,chromosome_after_grch38_nonsomatic,3,234744,0.05463168690902888
+2026-02,chromosome_after_grch38_nonsomatic,16,221371,0.05151940481008516
+2026-02,chromosome_after_grch38_nonsomatic,5,208591,0.04854513088318015
+2026-02,chromosome_after_grch38_nonsomatic,7,207656,0.04832752946521019
+2026-02,chromosome_after_grch38_nonsomatic,12,197007,0.045849200588245285
+2026-02,chromosome_after_grch38_nonsomatic,6,192815,0.04487360150361416
+2026-02,chromosome_after_grch38_nonsomatic,9,189743,0.044158658662968454
+2026-02,chromosome_after_grch38_nonsomatic,X,184668,0.04297756005740954
+2026-02,chromosome_after_grch38_nonsomatic,10,158979,0.036998990189783344
+2026-02,chromosome_after_grch38_nonsomatic,4,153151,0.035642646805902095
+2026-02,chromosome_after_grch38_nonsomatic,15,149130,0.0347068443442366
+2026-02,chromosome_after_grch38_nonsomatic,8,146301,0.03404845459938415
+2026-02,chromosome_after_grch38_nonsomatic,14,135873,0.03162155878484852
+2026-02,chromosome_after_grch38_nonsomatic,22,93204,0.02169125407537201
+2026-02,chromosome_after_grch38_nonsomatic,20,92705,0.021575122409524937
+2026-02,chromosome_after_grch38_nonsomatic,13,85295,0.019850602081014287
+2026-02,chromosome_after_grch38_nonsomatic,18,71636,0.016671759548338584
+2026-02,chromosome_after_grch38_nonsomatic,21,48565,0.011302473651028301
+2026-02,chromosome_after_grch38_nonsomatic,Y,3159,0.0007351902453124349
+2026-02,chromosome_after_grch38_nonsomatic,MT,3114,0.0007247174497951637
+2026-02,chromosome_after_grch38_nonsomatic,Un,3,6.981863678180768e-07
+2026-02,label_after_star_filter,Likely benign,955109,0.7095648078190319
+2026-02,label_after_star_filter,Benign,172622,0.1282434740488645
+2026-02,label_after_star_filter,Pathogenic,69519,0.05164670825504866
+2026-02,label_after_star_filter,Likely pathogenic,65551,0.04869882151392706
+2026-02,label_after_star_filter,Benign/Likely benign,59503,0.044205671561733634
+2026-02,label_after_star_filter,Pathogenic/Likely pathogenic,23745,0.017640516801394304
+2026-02,base_substitution_after_canonical_alleles,G>A,318891,0.2369106690073616
+2026-02,base_substitution_after_canonical_alleles,C>T,318643,0.23672642471726302
+2026-02,base_substitution_after_canonical_alleles,A>G,155175,0.11528269240341477
+2026-02,base_substitution_after_canonical_alleles,T>C,153777,0.11424408951003648
+2026-02,base_substitution_after_canonical_alleles,C>A,66291,0.049248944495664686
+2026-02,base_substitution_after_canonical_alleles,G>T,65757,0.048852224935533074
+2026-02,base_substitution_after_canonical_alleles,C>G,64922,0.048231886297499554
+2026-02,base_substitution_after_canonical_alleles,G>C,64487,0.04790871586930245
+2026-02,base_substitution_after_canonical_alleles,A>C,37509,0.02786620595688535
+2026-02,base_substitution_after_canonical_alleles,T>G,37342,0.027742138229278648
+2026-02,base_substitution_after_canonical_alleles,A>T,31480,0.023387138114125964
+2026-02,base_substitution_after_canonical_alleles,T>A,31274,0.023234096486060212
+2026-02,base_substitution_after_canonical_alleles,G>G,135,0.00010029427081979052
+2026-02,base_substitution_after_canonical_alleles,C>C,124,9.212214504928906e-05
+2026-02,base_substitution_after_canonical_alleles,T>T,117,8.692170137715178e-05
+2026-02,base_substitution_after_canonical_alleles,A>A,115,8.54358603279697e-05
+2026-09-14,assembly_raw,GRCh37,4547596,0.5021466800496007
+2026-09-14,assembly_raw,GRCh38,4494430,0.4962760771219183
+2026-09-14,assembly_raw,na,9513,0.0010504278232525168
+2026-09-14,assembly_raw,NCBI36,4771,0.0005268150052283988
+2026-09-14,origin_raw,germline,8391470,0.926588202038137
+2026-09-14,origin_raw,not applicable,489042,0.054000139129513014
+2026-09-14,origin_raw,unknown,147833,0.016323756585187567
+2026-09-14,origin_raw,somatic,13752,0.001518499256319627
+2026-09-14,origin_raw,not provided,7566,0.0008354395995720111
+2026-09-14,origin_raw,germline/somatic,6647,0.0007339633912708377
+2026-09-14,type_after_grch38_nonsomatic_basic_chromosome,single nucleotide variant,4157032,0.9269643767009732
+2026-09-14,type_after_grch38_nonsomatic_basic_chromosome,Deletion,167408,0.03732981905714378
+2026-09-14,type_after_grch38_nonsomatic_basic_chromosome,Duplication,71084,0.0158508127321156
+2026-09-14,type_after_grch38_nonsomatic_basic_chromosome,Microsatellite,39135,0.008726598900896743
+2026-09-14,type_after_grch38_nonsomatic_basic_chromosome,Indel,19279,0.004298967681369319
+2026-09-14,type_after_grch38_nonsomatic_basic_chromosome,Insertion,14123,0.003149246359457383
+2026-09-14,type_after_grch38_nonsomatic_basic_chromosome,copy number gain,7366,0.0016425227418935839
+2026-09-14,type_after_grch38_nonsomatic_basic_chromosome,copy number loss,7136,0.0015912357162846341
+2026-09-14,type_after_grch38_nonsomatic_basic_chromosome,Inversion,1524,0.00033983229142625876
+2026-09-14,type_after_grch38_nonsomatic_basic_chromosome,Variation,443,9.878327106419463e-05
+2026-09-14,type_after_grch38_nonsomatic_basic_chromosome,Translocation,18,4.013767221569985e-06
+2026-09-14,type_after_grch38_nonsomatic_basic_chromosome,Complex,17,3.790780153704986e-06
+2026-09-14,clinical_significance_after_snv,Uncertain significance,2266287,0.5451694863065765
+2026-09-14,clinical_significance_after_snv,Likely benign,1052996,0.2533047616664967
+2026-09-14,clinical_significance_after_snv,-,234789,0.05647995974050717
+2026-09-14,clinical_significance_after_snv,Benign,179581,0.04319933067630945
+2026-09-14,clinical_significance_after_snv,Conflicting classifications of pathogenicity,159953,0.03847769273847303
+2026-09-14,clinical_significance_after_snv,Pathogenic,84379,0.020297895229096145
+2026-09-14,clinical_significance_after_snv,Likely pathogenic,78309,0.018837718834014267
+2026-09-14,clinical_significance_after_snv,Benign/Likely benign,63990,0.015393193990327715
+2026-09-14,clinical_significance_after_snv,Pathogenic/Likely pathogenic,27991,0.006733409798144446
+2026-09-14,clinical_significance_after_snv,not provided,4927,0.0011852206093193414
+2026-09-14,clinical_significance_after_snv,other,1451,0.0003490471086101815
+2026-09-14,clinical_significance_after_snv,no classification for the single variant,482,0.00011594810913170742
+2026-09-14,clinical_significance_after_snv,risk factor,285,6.855852925837472e-05
+2026-09-14,clinical_significance_after_snv,association,272,6.54312980992208e-05
+2026-09-14,clinical_significance_after_snv,drug response,182,4.3781236228155086e-05
+2026-09-14,clinical_significance_after_snv,Uncertain significance/Uncertain risk allele,139,3.343731777864592e-05
+2026-09-14,clinical_significance_after_snv,no classifications from unflagged records,111,2.6701742974314366e-05
+2026-09-14,clinical_significance_after_snv,Affects,107,2.5739518002267e-05
+2026-09-14,clinical_significance_after_snv,"Likely pathogenic, low penetrance",77,1.852283071191177e-05
+2026-09-14,clinical_significance_after_snv,Likely risk allele,72,1.7320049496852563e-05
+2026-09-14,clinical_significance_after_snv,Pathogenic; other,61,1.467393082372231e-05
+2026-09-14,clinical_significance_after_snv,"Pathogenic, low penetrance",60,1.4433374580710468e-05
+2026-09-14,clinical_significance_after_snv,VUS-high,45,1.0825030935532851e-05
+2026-09-14,clinical_significance_after_snv,VUS-mid,42,1.0103362206497329e-05
+2026-09-14,clinical_significance_after_snv,Pathogenic; drug response,37,8.900580991438122e-06
+2026-09-14,clinical_significance_after_snv,protective,34,8.1789122624026e-06
+2026-09-14,clinical_significance_after_snv,Uncertain risk allele,33,7.938356019390757e-06
+2026-09-14,clinical_significance_after_snv,Uncertain significance/VUS-high,21,5.051681103248664e-06
+2026-09-14,clinical_significance_after_snv,Benign; risk factor,18,4.330012374213141e-06
+2026-09-14,clinical_significance_after_snv,Conflicting classifications of pathogenicity; other,18,4.330012374213141e-06
+2026-09-14,clinical_significance_after_snv,VUS-low,17,4.0894561312013e-06
+2026-09-14,clinical_significance_after_snv,Conflicting classifications of pathogenicity; risk factor,15,3.608343645177617e-06
+2026-09-14,clinical_significance_after_snv,Likely pathogenic/Likely risk allele,13,3.1272311591539346e-06
+2026-09-14,clinical_significance_after_snv,Benign/Likely benign; other,12,2.8866749161420935e-06
+2026-09-14,clinical_significance_after_snv,Benign; other,12,2.8866749161420935e-06
+2026-09-14,clinical_significance_after_snv,Benign; association,11,2.6461186731302527e-06
+2026-09-14,clinical_significance_after_snv,Pathogenic; risk factor,10,2.4055624301184116e-06
+2026-09-14,clinical_significance_after_snv,confers sensitivity,10,2.4055624301184116e-06
+2026-09-14,clinical_significance_after_snv,Likely benign; other,9,2.1650061871065704e-06
+2026-09-14,clinical_significance_after_snv,Likely pathogenic; drug response,9,2.1650061871065704e-06
+2026-09-14,clinical_significance_after_snv,Uncertain significance/VUS-mid,9,2.1650061871065704e-06
+2026-09-14,clinical_significance_after_snv,Uncertain significance; other,9,2.1650061871065704e-06
+2026-09-14,clinical_significance_after_snv,"Pathogenic/Likely pathogenic/Pathogenic, low penetrance",7,1.683893701082888e-06
+2026-09-14,clinical_significance_after_snv,Uncertain significance; association,6,1.4433374580710467e-06
+2026-09-14,clinical_significance_after_snv,Uncertain significance; drug response,6,1.4433374580710467e-06
+2026-09-14,clinical_significance_after_snv,Conflicting classifications of pathogenicity; association,5,1.2027812150592058e-06
+2026-09-14,clinical_significance_after_snv,Likely pathogenic; association,5,1.2027812150592058e-06
+2026-09-14,clinical_significance_after_snv,Pathogenic/Likely pathogenic; other,5,1.2027812150592058e-06
+2026-09-14,clinical_significance_after_snv,Pathogenic/Likely risk allele,5,1.2027812150592058e-06
+2026-09-14,clinical_significance_after_snv,Pathogenic; Affects,5,1.2027812150592058e-06
+2026-09-14,clinical_significance_after_snv,Uncertain significance; risk factor,5,1.2027812150592058e-06
+2026-09-14,clinical_significance_after_snv,Benign; drug response,4,9.622249720473646e-07
+2026-09-14,clinical_significance_after_snv,Benign; protective,4,9.622249720473646e-07
+2026-09-14,clinical_significance_after_snv,Likely benign; drug response,4,9.622249720473646e-07
+2026-09-14,clinical_significance_after_snv,Likely benign; drug response; other,4,9.622249720473646e-07
+2026-09-14,clinical_significance_after_snv,"Likely pathogenic/Pathogenic, low penetrance",4,9.622249720473646e-07
+2026-09-14,clinical_significance_after_snv,Pathogenic/Likely pathogenic/Likely risk allele,4,9.622249720473646e-07
+2026-09-14,clinical_significance_after_snv,Pathogenic/Likely pathogenic; risk factor,4,9.622249720473646e-07
+2026-09-14,clinical_significance_after_snv,Pathogenic; association,4,9.622249720473646e-07
+2026-09-14,clinical_significance_after_snv,Uncertain significance/VUS-low,4,9.622249720473646e-07
+2026-09-14,clinical_significance_after_snv,protective; risk factor,4,9.622249720473646e-07
+2026-09-14,clinical_significance_after_snv,"Pathogenic/Likely pathogenic, low penetrance",3,7.216687290355234e-07
+2026-09-14,clinical_significance_after_snv,"Pathogenic/Pathogenic, low penetrance",3,7.216687290355234e-07
+2026-09-14,clinical_significance_after_snv,Benign/Likely benign; association,2,4.811124860236823e-07
+2026-09-14,clinical_significance_after_snv,Benign/Likely benign; drug response,2,4.811124860236823e-07
+2026-09-14,clinical_significance_after_snv,Benign; Affects,2,4.811124860236823e-07
+2026-09-14,clinical_significance_after_snv,Conflicting classifications of pathogenicity; association; risk factor,2,4.811124860236823e-07
+2026-09-14,clinical_significance_after_snv,Conflicting classifications of pathogenicity; drug response,2,4.811124860236823e-07
+2026-09-14,clinical_significance_after_snv,Conflicting classifications of pathogenicity; other; risk factor,2,4.811124860236823e-07
+2026-09-14,clinical_significance_after_snv,Conflicting classifications of pathogenicity; protective,2,4.811124860236823e-07
+2026-09-14,clinical_significance_after_snv,Established risk allele,2,4.811124860236823e-07
+2026-09-14,clinical_significance_after_snv,Likely benign; risk factor,2,4.811124860236823e-07
+2026-09-14,clinical_significance_after_snv,"Likely pathogenic/Likely pathogenic, low penetrance",2,4.811124860236823e-07
+2026-09-14,clinical_significance_after_snv,Pathogenic/Likely pathogenic; drug response,2,4.811124860236823e-07
+2026-09-14,clinical_significance_after_snv,association not found,2,4.811124860236823e-07
+2026-09-14,clinical_significance_after_snv,Benign/Likely benign; drug response; other,1,2.4055624301184116e-07
+2026-09-14,clinical_significance_after_snv,Benign/Likely benign; other; risk factor,1,2.4055624301184116e-07
+2026-09-14,clinical_significance_after_snv,Benign/Likely benign; risk factor,1,2.4055624301184116e-07
+2026-09-14,clinical_significance_after_snv,Benign; Affects; association; other,1,2.4055624301184116e-07
+2026-09-14,clinical_significance_after_snv,Benign; confers sensitivity,1,2.4055624301184116e-07
+2026-09-14,clinical_significance_after_snv,Conflicting classifications of pathogenicity; Affects,1,2.4055624301184116e-07
+2026-09-14,clinical_significance_after_snv,Established risk allele; association,1,2.4055624301184116e-07
+2026-09-14,clinical_significance_after_snv,Likely benign; Affects; association,1,2.4055624301184116e-07
+2026-09-14,clinical_significance_after_snv,Likely benign; association,1,2.4055624301184116e-07
+2026-09-14,clinical_significance_after_snv,Likely pathogenic; Affects,1,2.4055624301184116e-07
+2026-09-14,clinical_significance_after_snv,Likely pathogenic; risk factor,1,2.4055624301184116e-07
+2026-09-14,clinical_significance_after_snv,Pathogenic/Likely pathogenic/Established risk allele,1,2.4055624301184116e-07
+2026-09-14,clinical_significance_after_snv,"Pathogenic/Likely pathogenic/Likely pathogenic, low penetrance",1,2.4055624301184116e-07
+2026-09-14,clinical_significance_after_snv,"Pathogenic/Likely pathogenic/Pathogenic, low penetrance/Established risk allele; risk factor",1,2.4055624301184116e-07
+2026-09-14,clinical_significance_after_snv,"Pathogenic/Likely pathogenic/Pathogenic, low penetrance; other",1,2.4055624301184116e-07
+2026-09-14,clinical_significance_after_snv,Pathogenic/Likely pathogenic; association,1,2.4055624301184116e-07
+2026-09-14,clinical_significance_after_snv,"Pathogenic/Pathogenic, low penetrance; other",1,2.4055624301184116e-07
+2026-09-14,clinical_significance_after_snv,"Pathogenic/Pathogenic, low penetrance; risk factor",1,2.4055624301184116e-07
+2026-09-14,clinical_significance_after_snv,Pathogenic; confers sensitivity,1,2.4055624301184116e-07
+2026-09-14,clinical_significance_after_snv,Uncertain risk allele; risk factor,1,2.4055624301184116e-07
+2026-09-14,clinical_significance_after_snv,Uncertain significance; Affects,1,2.4055624301184116e-07
+2026-09-14,clinical_significance_after_snv,association; drug response; risk factor,1,2.4055624301184116e-07
+2026-09-14,clinical_significance_after_snv,association; protective,1,2.4055624301184116e-07
+2026-09-14,clinical_significance_after_snv,association; risk factor,1,2.4055624301184116e-07
+2026-09-14,clinical_significance_after_snv,confers sensitivity; other,1,2.4055624301184116e-07
+2026-09-14,clinical_significance_after_snv,drug response; other,1,2.4055624301184116e-07
+2026-09-14,clinical_significance_after_snv,drug response; risk factor,1,2.4055624301184116e-07
+2026-09-14,clinical_significance_after_snv,other; risk factor,1,2.4055624301184116e-07
+2026-09-14,review_status_after_selected_significance,"criteria provided, single submitter",1090166,0.7330098719377964
+2026-09-14,review_status_after_selected_significance,"criteria provided, multiple submitters, no conflicts",335431,0.22553834402647577
+2026-09-14,review_status_after_selected_significance,no assertion criteria provided,49903,0.03355396484508952
+2026-09-14,review_status_after_selected_significance,reviewed by expert panel,11727,0.007885043899933166
+2026-09-14,review_status_after_selected_significance,practice guideline,19,1.2775290705101913e-05
+2026-09-14,chromosome_after_grch38_nonsomatic,1,404458,0.09012593984711093
+2026-09-14,chromosome_after_grch38_nonsomatic,2,391686,0.08727993728633254
+2026-09-14,chromosome_after_grch38_nonsomatic,17,270456,0.060266087423886366
+2026-09-14,chromosome_after_grch38_nonsomatic,11,261742,0.058324334658883016
+2026-09-14,chromosome_after_grch38_nonsomatic,19,256446,0.057144219597664546
+2026-09-14,chromosome_after_grch38_nonsomatic,3,245312,0.05466321485982346
+2026-09-14,chromosome_after_grch38_nonsomatic,16,231492,0.05158368499841121
+2026-09-14,chromosome_after_grch38_nonsomatic,7,217790,0.048530449241459654
+2026-09-14,chromosome_after_grch38_nonsomatic,5,217141,0.048385831666925894
+2026-09-14,chromosome_after_grch38_nonsomatic,12,205824,0.045864048784031365
+2026-09-14,chromosome_after_grch38_nonsomatic,6,200882,0.04476281603619495
+2026-09-14,chromosome_after_grch38_nonsomatic,9,198599,0.044254091964298845
+2026-09-14,chromosome_after_grch38_nonsomatic,X,193556,0.04313035324569523
+2026-09-14,chromosome_after_grch38_nonsomatic,10,168013,0.03743857095553221
+2026-09-14,chromosome_after_grch38_nonsomatic,4,159610,0.03556611875398032
+2026-09-14,chromosome_after_grch38_nonsomatic,15,155843,0.03472671289378207
+2026-09-14,chromosome_after_grch38_nonsomatic,8,151830,0.0338324905107251
+2026-09-14,chromosome_after_grch38_nonsomatic,14,142534,0.03176104987456821
+2026-09-14,chromosome_after_grch38_nonsomatic,22,97231,0.021666119244209393
+2026-09-14,chromosome_after_grch38_nonsomatic,20,96961,0.02160595476790105
+2026-09-14,chromosome_after_grch38_nonsomatic,13,88822,0.019792330054295097
+2026-09-14,chromosome_after_grch38_nonsomatic,18,74742,0.01665486403051186
+2026-09-14,chromosome_after_grch38_nonsomatic,21,50374,0.011224908627987
+2026-09-14,chromosome_after_grch38_nonsomatic,Y,3221,0.0007177399192191631
+2026-09-14,chromosome_after_grch38_nonsomatic,MT,3130,0.0006974622623893141
+2026-09-14,chromosome_after_grch38_nonsomatic,Un,3,6.684941812038154e-07
+2026-09-14,label_after_star_filter,Likely benign,1027524,0.714877381390524
+2026-09-14,label_after_star_filter,Benign,173369,0.12061769528915506
+2026-09-14,label_after_star_filter,Likely pathogenic,72784,0.05063787836306296
+2026-09-14,label_after_star_filter,Pathogenic,72206,0.050235747486855956
+2026-09-14,label_after_star_filter,Benign/Likely benign,63895,0.044453550753021376
+2026-09-14,label_after_star_filter,Pathogenic/Likely pathogenic,27565,0.019177746717380612
+2026-09-14,base_substitution_after_canonical_alleles,G>A,338691,0.23563850548202817
+2026-09-14,base_substitution_after_canonical_alleles,C>T,338183,0.23528507311805963
+2026-09-14,base_substitution_after_canonical_alleles,A>G,165576,0.11519668719774749
+2026-09-14,base_substitution_after_canonical_alleles,T>C,164024,0.11411690958184359
+2026-09-14,base_substitution_after_canonical_alleles,C>A,71564,0.04978943640756874
+2026-09-14,base_substitution_after_canonical_alleles,G>T,71099,0.049465920562597535
+2026-09-14,base_substitution_after_canonical_alleles,C>G,69835,0.0485865140506758
+2026-09-14,base_substitution_after_canonical_alleles,G>C,69454,0.04832143977769939
+2026-09-14,base_substitution_after_canonical_alleles,A>C,40436,0.028132659585496194
+2026-09-14,base_substitution_after_canonical_alleles,T>G,40228,0.027987947121509073
+2026-09-14,base_substitution_after_canonical_alleles,A>T,33913,0.023594393226900098
+2026-09-14,base_substitution_after_canonical_alleles,T>A,33840,0.02354360471790462
+2026-09-14,base_substitution_after_canonical_alleles,G>G,135,9.392395499164077e-05
+2026-09-14,base_substitution_after_canonical_alleles,C>C,124,8.62708919923219e-05
+2026-09-14,base_substitution_after_canonical_alleles,T>T,117,8.140076099275533e-05
+2026-09-14,base_substitution_after_canonical_alleles,A>A,114,7.93135619929411e-05

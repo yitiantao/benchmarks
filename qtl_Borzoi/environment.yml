@@ -1,0 +1,42 @@
+name: borzoi_py310
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10
+  - pip
+  - setuptools<81
+  # Both local upstream checkouts use setuptools_scm. Keep the build backend
+  # on its stable 8.x API and reuse it via pip --no-build-isolation.
+  - setuptools_scm>=8.0.4,<9
+  - bedtools
+  # Keep the compiled scientific stack under one package manager so NumPy and
+  # extension modules (pandas/scipy/sklearn/h5py) always share a compatible ABI.
+  - numpy=1.24.3
+  - pandas=1.5.3
+  - scipy=1.9.3
+  - scikit-learn=1.2.2
+  - h5py=3.10
+  - matplotlib=3.7.1
+  - pysam=0.22
+  # Install the compiled extension from Bioconda. The old pip constraint
+  # pybedtools~=0.8.1 triggers an isolated source build with modern pip and
+  # fails before setuptools is available in the build environment.
+  - pybedtools>=0.9
+  # Borzoi pins pyranges 0.0.129. Installing the Bioconda build also provides
+  # compiled ncls/sorted-nearest packages and avoids a local Cython build.
+  - pyranges=0.0.129
+  - pip:
+      - google-cloud-storage~=2.0.0
+      - tensorflow[and-cuda]~=2.15.0
+      - intervaltree~=3.1.0
+      - joblib~=1.1.1
+      - natsort~=7.1.1
+      - networkx~=2.8.4
+      - pybigwig~=0.3.18
+      - pyfaidx~=0.7.1
+      - qnorm~=0.8.1
+      - seaborn~=0.12.2
+      - statsmodels~=0.13.5
+      - tabulate~=0.8.10
+      - tqdm~=4.65.0

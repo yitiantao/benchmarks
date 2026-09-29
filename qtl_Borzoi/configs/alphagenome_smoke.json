@@ -1,0 +1,16 @@
+{
+  "name": "alphagenome-local-smoke",
+  "root_dir": ".",
+  "research_source": "../../alphagenome_research",
+  "checkpoint_path": "../../alphagenome_models/all_folds",
+  "fasta_path": "reference/hg38/assembly/ucsc/hg38.fa",
+  "gtf_feather_path": "reference/alphagenome/gencode41_basic_nort.gtf.feather",
+  "splice_site_starts_feather_path": "reference/alphagenome/gencode41_basic_nort.splice_sites_starts.feather",
+  "splice_site_ends_feather_path": "reference/alphagenome/gencode41_basic_nort.splice_sites_ends.feather",
+  "pas_feather_path": "reference/alphagenome/polyadb_human_v3.feather",
+  "sequence_length": 131072,
+  "device": 0,
+  "aggregation": "max_abs",
+  "empty_score": 0.0,
+  "save_raw_scores": false
+}

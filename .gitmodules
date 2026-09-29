@@ -1,0 +1,6 @@
+[submodule "VEP-eval"]
+	path = VEP-eval
+	url = https://github.com/Brandes-Lab/VEP-eval.git
+[submodule "qtl_Borzoi/ntv3_tutorial"]
+	path = qtl_Borzoi/ntv3_tutorial
+	url = https://huggingface.co/spaces/InstaDeepAI/ntv3

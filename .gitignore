@@ -1,0 +1,81 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+.venv*/
+venv/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+
+# 本地环境与密钥
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# 训练输出与日志
+outputs/
+checkpoints/
+runs/
+logs/
+wandb/
+tensorboard/
+*.out
+MFASS/
+NTv3_prepared/
+NTv3_benchmark_dataset/
+step_0034000/
+.benchmark_deps/
+dna-fm-checkpoints/
+
+# 模型权重与大型张量
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.npy
+*.npz
+*.h5
+*.hdf5
+
+# 数据、压缩包与论文附件
+/data/
+/datasets/
+/artifacts/
+*.fasta
+*.fa
+*.fna
+*.fastq
+*.fq
+*.fai
+*.gff
+*.gff3
+*.gtf
+*.vcf
+*.parquet
+*.feather
+*.gz
+*.tar
+*.zip
+*.pdf
+*.xlsx
+*.bigwig
+*.bw
+
+# Hugging Face / 编译缓存
+.cache/
+hf_cache/
+*.egg-info/
+build/
+dist/

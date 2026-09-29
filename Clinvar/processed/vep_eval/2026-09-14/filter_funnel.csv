@@ -1,0 +1,13 @@
+release,step,count
+2026-09-14,raw,9056310
+2026-09-14,GRCh38,4494430
+2026-09-14,exclude exact somatic,4487698
+2026-09-14,basic chromosomes,4484565
+2026-09-14,SNV,4157032
+2026-09-14,selected clinical significance,1487246
+2026-09-14,gold stars >= 1,1437343
+2026-09-14,canonical A/C/G/T alleles,1437333
+2026-09-14,reference validation: VALID,1437296
+2026-09-14,reference validation: LENGTH_ERROR,29
+2026-09-14,reference validation: MISMATCH_ERROR,8
+2026-09-14,duplicate variant-key rows,0

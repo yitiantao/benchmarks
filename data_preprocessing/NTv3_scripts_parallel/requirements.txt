@@ -1,0 +1,6 @@
+grain==0.2.18
+numpy>=2.0
+pyarrow>=20
+pyBigWig>=0.3.24
+pyfaidx>=0.9
+tensorstore>=0.1.85

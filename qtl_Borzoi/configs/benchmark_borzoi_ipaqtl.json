@@ -1,0 +1,19 @@
+{
+  "data": {
+    "class": "qtl_benchmark.data.matched_qtl:MatchedQTLDataModule",
+    "config": {"task": "ipaqtl", "data_dir": "data", "max_pairs": 0}
+  },
+  "model": {
+    "class": "qtl_benchmark.models.borzoi:BorzoiQTLModelAdapter",
+    "config": {
+      "name": "borzoi",
+      "task": "ipaqtl",
+      "experiment_dir": "outputs/borzoi_qtl/experiment/all"
+    }
+  },
+  "evaluator": {
+    "class": "qtl_benchmark.evaluation.matched_qtl:MatchedQTLEvaluator",
+    "config": {"repeats": 100, "sample_fraction": 0.8, "seed": 44}
+  },
+  "run": {"output_dir": "outputs/unified"}
+}

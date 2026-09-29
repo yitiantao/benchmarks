@@ -1,0 +1,20 @@
+[
+  {
+    "release": "2025-03",
+    "path": "data/raw/variant_summary_2025-03.txt.gz",
+    "bytes": 351455927,
+    "sha256": "291b5a5affff2f9c8d4d3d163227aa77b9ef5cbc2b7986e3650060658bd9cec2"
+  },
+  {
+    "release": "2026-02",
+    "path": "data/raw/variant_summary_2026-02.txt.gz",
+    "bytes": 422086052,
+    "sha256": "02c4d077e722f03227b38591625f275b4ae60afb2eaafd8ecb9cd3c3e3d406bc"
+  },
+  {
+    "release": "2026-09-14",
+    "path": "data/raw/variant_summary_latest_2026-09-14.txt.gz",
+    "bytes": 443063763,
+    "sha256": "f25970aa49619fc73cdf8c878a3a20faaa69a0abd56cc8e14954f1d143e7e44e"
+  }
+]

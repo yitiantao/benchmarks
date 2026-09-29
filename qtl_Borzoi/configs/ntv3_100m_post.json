@@ -1,0 +1,25 @@
+{
+  "name": "ntv3-100m-post",
+  "root_dir": ".",
+  "model_id": "InstaDeepAI/NTv3_100M_post",
+  "checkpoint_type": "post",
+  "revision": "b7292f0bd1b5b004d28561783a1890e1ec6f94fd",
+  "code_revision": "0ecff3637f0d3ba5b686d1095083218157c2ca34",
+  "cache_dir": ".benchmark_deps/ntv3_hf",
+  "local_files_only": true,
+  "fasta_path": "reference/hg38/assembly/ucsc/hg38.fa",
+  "gtf_path": "reference/hg38/genes/gencode41/gencode41_basic_nort.gtf",
+  "sequence_length": 32768,
+  "device": "cuda",
+  "dtype": "float32",
+  "species": "human",
+  "strict_reference": true,
+  "aggregation": "max_abs",
+  "eqtl_track_metadata_path": "configs/targets_rna.txt",
+  "eqtl_track_metadata_sha256": "9d3d4b24a555c5b8e0199cd2e5def893b11d866a2882aa35a76dcdc2544eb47e",
+  "task_heads": {
+    "sqtl": ["splice_donor", "splice_acceptor"],
+    "paqtl": ["polyA_signal"],
+    "ipaqtl": ["polyA_signal", "3UTR+", "3UTR-"]
+  }
+}

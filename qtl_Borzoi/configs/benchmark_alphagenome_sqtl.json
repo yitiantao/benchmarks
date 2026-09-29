@@ -1,0 +1,27 @@
+{
+  "data": {
+    "class": "qtl_benchmark.data.matched_qtl:MatchedQTLDataModule",
+    "config": {"task": "sqtl", "data_dir": "data", "max_pairs": 0}
+  },
+  "model": {
+    "class": "qtl_benchmark.models.alphagenome:AlphaGenomeModel",
+    "config": {
+      "name": "alphagenome-local",
+      "root_dir": ".",
+      "research_source": "../../alphagenome_research",
+      "checkpoint_path": "../../alphagenome_models/all_folds",
+      "fasta_path": "reference/hg38/assembly/ucsc/hg38.fa",
+      "gtf_feather_path": "reference/alphagenome/gencode41_basic_nort.gtf.feather",
+      "splice_site_starts_feather_path": "reference/alphagenome/gencode41_basic_nort.splice_sites_starts.feather",
+      "splice_site_ends_feather_path": "reference/alphagenome/gencode41_basic_nort.splice_sites_ends.feather",
+      "pas_feather_path": "reference/alphagenome/polyadb_human_v3.feather",
+      "sequence_length": 1048576,
+      "device": 0
+    }
+  },
+  "evaluator": {
+    "class": "qtl_benchmark.evaluation.matched_qtl:MatchedQTLEvaluator",
+    "config": {"repeats": 100, "sample_fraction": 0.8, "seed": 44}
+  },
+  "run": {"output_dir": "outputs/unified"}
+}

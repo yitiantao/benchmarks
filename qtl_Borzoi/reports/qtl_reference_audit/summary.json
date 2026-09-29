@@ -1,0 +1,495 @@
+{
+  "by_file_occurrences": {
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Adipose_Subcutaneous_neg.vcf.gz": {
+      "alt_matches_fasta": 407,
+      "ref_matches_fasta": 1752
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Adipose_Subcutaneous_pos.vcf.gz": {
+      "alt_matches_fasta": 469,
+      "ref_matches_fasta": 1690
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Adipose_Visceral_Omentum_neg.vcf.gz": {
+      "alt_matches_fasta": 296,
+      "ref_matches_fasta": 1120
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Adipose_Visceral_Omentum_pos.vcf.gz": {
+      "alt_matches_fasta": 328,
+      "ref_matches_fasta": 1088
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Adrenal_Gland_neg.vcf.gz": {
+      "alt_matches_fasta": 121,
+      "ref_matches_fasta": 471
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Adrenal_Gland_pos.vcf.gz": {
+      "alt_matches_fasta": 156,
+      "ref_matches_fasta": 436
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Artery_Aorta_neg.vcf.gz": {
+      "alt_matches_fasta": 317,
+      "ref_matches_fasta": 1059
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Artery_Aorta_pos.vcf.gz": {
+      "alt_matches_fasta": 317,
+      "ref_matches_fasta": 1059
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Artery_Coronary_neg.vcf.gz": {
+      "alt_matches_fasta": 89,
+      "ref_matches_fasta": 339
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Artery_Coronary_pos.vcf.gz": {
+      "alt_matches_fasta": 109,
+      "ref_matches_fasta": 319
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Artery_Tibial_neg.vcf.gz": {
+      "alt_matches_fasta": 440,
+      "ref_matches_fasta": 1758
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Artery_Tibial_pos.vcf.gz": {
+      "alt_matches_fasta": 482,
+      "ref_matches_fasta": 1716
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Brain_Amygdala_neg.vcf.gz": {
+      "alt_matches_fasta": 37,
+      "ref_matches_fasta": 136
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Brain_Amygdala_pos.vcf.gz": {
+      "alt_matches_fasta": 53,
+      "ref_matches_fasta": 120
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Brain_Anterior_cingulate_cortex_BA24_neg.vcf.gz": {
+      "alt_matches_fasta": 42,
+      "ref_matches_fasta": 231
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Brain_Anterior_cingulate_cortex_BA24_pos.vcf.gz": {
+      "alt_matches_fasta": 77,
+      "ref_matches_fasta": 196
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Brain_Caudate_basal_ganglia_neg.vcf.gz": {
+      "alt_matches_fasta": 117,
+      "ref_matches_fasta": 433
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Brain_Caudate_basal_ganglia_pos.vcf.gz": {
+      "alt_matches_fasta": 154,
+      "ref_matches_fasta": 396
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Brain_Cerebellar_Hemisphere_neg.vcf.gz": {
+      "alt_matches_fasta": 148,
+      "ref_matches_fasta": 556
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Brain_Cerebellar_Hemisphere_pos.vcf.gz": {
+      "alt_matches_fasta": 221,
+      "ref_matches_fasta": 483
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Brain_Cerebellum_neg.vcf.gz": {
+      "alt_matches_fasta": 164,
+      "ref_matches_fasta": 784
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Brain_Cerebellum_pos.vcf.gz": {
+      "alt_matches_fasta": 251,
+      "ref_matches_fasta": 697
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Brain_Cortex_neg.vcf.gz": {
+      "alt_matches_fasta": 127,
+      "ref_matches_fasta": 524
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Brain_Cortex_pos.vcf.gz": {
+      "alt_matches_fasta": 182,
+      "ref_matches_fasta": 469
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Brain_Frontal_Cortex_BA9_neg.vcf.gz": {
+      "alt_matches_fasta": 100,
+      "ref_matches_fasta": 365
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Brain_Frontal_Cortex_BA9_pos.vcf.gz": {
+      "alt_matches_fasta": 119,
+      "ref_matches_fasta": 346
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Brain_Hippocampus_neg.vcf.gz": {
+      "alt_matches_fasta": 53,
+      "ref_matches_fasta": 260
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Brain_Hippocampus_pos.vcf.gz": {
+      "alt_matches_fasta": 84,
+      "ref_matches_fasta": 229
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Brain_Hypothalamus_neg.vcf.gz": {
+      "alt_matches_fasta": 68,
+      "ref_matches_fasta": 258
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Brain_Hypothalamus_pos.vcf.gz": {
+      "alt_matches_fasta": 91,
+      "ref_matches_fasta": 235
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Brain_Nucleus_accumbens_basal_ganglia_neg.vcf.gz": {
+      "alt_matches_fasta": 105,
+      "ref_matches_fasta": 433
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Brain_Nucleus_accumbens_basal_ganglia_pos.vcf.gz": {
+      "alt_matches_fasta": 147,
+      "ref_matches_fasta": 391
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Brain_Putamen_basal_ganglia_neg.vcf.gz": {
+      "alt_matches_fasta": 101,
+      "ref_matches_fasta": 289
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Brain_Putamen_basal_ganglia_pos.vcf.gz": {
+      "alt_matches_fasta": 106,
+      "ref_matches_fasta": 284
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Brain_Spinal_cord_cervical_c-1_neg.vcf.gz": {
+      "alt_matches_fasta": 51,
+      "ref_matches_fasta": 198
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Brain_Spinal_cord_cervical_c-1_pos.vcf.gz": {
+      "alt_matches_fasta": 62,
+      "ref_matches_fasta": 187
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Brain_Substantia_nigra_neg.vcf.gz": {
+      "alt_matches_fasta": 39,
+      "ref_matches_fasta": 127
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Brain_Substantia_nigra_pos.vcf.gz": {
+      "alt_matches_fasta": 53,
+      "ref_matches_fasta": 113
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Breast_Mammary_Tissue_neg.vcf.gz": {
+      "alt_matches_fasta": 212,
+      "ref_matches_fasta": 917
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Breast_Mammary_Tissue_pos.vcf.gz": {
+      "alt_matches_fasta": 263,
+      "ref_matches_fasta": 866
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Cells_Cultured_fibroblasts_neg.vcf.gz": {
+      "alt_matches_fasta": 437,
+      "ref_matches_fasta": 1752
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Cells_Cultured_fibroblasts_pos.vcf.gz": {
+      "alt_matches_fasta": 496,
+      "ref_matches_fasta": 1693
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Cells_EBV-transformed_lymphocytes_neg.vcf.gz": {
+      "alt_matches_fasta": 60,
+      "ref_matches_fasta": 244
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Cells_EBV-transformed_lymphocytes_pos.vcf.gz": {
+      "alt_matches_fasta": 76,
+      "ref_matches_fasta": 228
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Colon_Sigmoid_neg.vcf.gz": {
+      "alt_matches_fasta": 161,
+      "ref_matches_fasta": 779
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Colon_Sigmoid_pos.vcf.gz": {
+      "alt_matches_fasta": 220,
+      "ref_matches_fasta": 720
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Colon_Transverse_neg.vcf.gz": {
+      "alt_matches_fasta": 221,
+      "ref_matches_fasta": 885
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Colon_Transverse_pos.vcf.gz": {
+      "alt_matches_fasta": 255,
+      "ref_matches_fasta": 851
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Esophagus_Gastroesophageal_Junction_neg.vcf.gz": {
+      "alt_matches_fasta": 229,
+      "ref_matches_fasta": 843
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Esophagus_Gastroesophageal_Junction_pos.vcf.gz": {
+      "alt_matches_fasta": 255,
+      "ref_matches_fasta": 817
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Esophagus_Mucosa_neg.vcf.gz": {
+      "alt_matches_fasta": 337,
+      "ref_matches_fasta": 1455
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Esophagus_Mucosa_pos.vcf.gz": {
+      "alt_matches_fasta": 417,
+      "ref_matches_fasta": 1375
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Esophagus_Muscularis_neg.vcf.gz": {
+      "alt_matches_fasta": 372,
+      "ref_matches_fasta": 1463
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Esophagus_Muscularis_pos.vcf.gz": {
+      "alt_matches_fasta": 430,
+      "ref_matches_fasta": 1405
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Heart_Atrial_Appendage_neg.vcf.gz": {
+      "alt_matches_fasta": 246,
+      "ref_matches_fasta": 871
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Heart_Atrial_Appendage_pos.vcf.gz": {
+      "alt_matches_fasta": 249,
+      "ref_matches_fasta": 868
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Heart_Left_Ventricle_neg.vcf.gz": {
+      "alt_matches_fasta": 186,
+      "ref_matches_fasta": 683
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Heart_Left_Ventricle_pos.vcf.gz": {
+      "alt_matches_fasta": 214,
+      "ref_matches_fasta": 655
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Kidney_Cortex_neg.vcf.gz": {
+      "alt_matches_fasta": 9,
+      "ref_matches_fasta": 45
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Kidney_Cortex_pos.vcf.gz": {
+      "alt_matches_fasta": 17,
+      "ref_matches_fasta": 37
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Liver_neg.vcf.gz": {
+      "alt_matches_fasta": 66,
+      "ref_matches_fasta": 286
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Liver_pos.vcf.gz": {
+      "alt_matches_fasta": 91,
+      "ref_matches_fasta": 261
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Lung_neg.vcf.gz": {
+      "alt_matches_fasta": 350,
+      "ref_matches_fasta": 1303
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Lung_pos.vcf.gz": {
+      "alt_matches_fasta": 372,
+      "ref_matches_fasta": 1281
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Minor_Salivary_Gland_neg.vcf.gz": {
+      "alt_matches_fasta": 59,
+      "ref_matches_fasta": 231
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Minor_Salivary_Gland_pos.vcf.gz": {
+      "alt_matches_fasta": 72,
+      "ref_matches_fasta": 218
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Muscle_Skeletal_neg.vcf.gz": {
+      "alt_matches_fasta": 364,
+      "ref_matches_fasta": 1415
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Muscle_Skeletal_pos.vcf.gz": {
+      "alt_matches_fasta": 379,
+      "ref_matches_fasta": 1400
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Nerve_Tibial_neg.vcf.gz": {
+      "alt_matches_fasta": 540,
+      "ref_matches_fasta": 2200
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Nerve_Tibial_pos.vcf.gz": {
+      "alt_matches_fasta": 601,
+      "ref_matches_fasta": 2139
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Ovary_neg.vcf.gz": {
+      "alt_matches_fasta": 71,
+      "ref_matches_fasta": 285
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Ovary_pos.vcf.gz": {
+      "alt_matches_fasta": 92,
+      "ref_matches_fasta": 264
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Pancreas_neg.vcf.gz": {
+      "alt_matches_fasta": 220,
+      "ref_matches_fasta": 733
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Pancreas_pos.vcf.gz": {
+      "alt_matches_fasta": 223,
+      "ref_matches_fasta": 730
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Pituitary_neg.vcf.gz": {
+      "alt_matches_fasta": 114,
+      "ref_matches_fasta": 551
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Pituitary_pos.vcf.gz": {
+      "alt_matches_fasta": 178,
+      "ref_matches_fasta": 487
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Prostate_neg.vcf.gz": {
+      "alt_matches_fasta": 94,
+      "ref_matches_fasta": 436
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Prostate_pos.vcf.gz": {
+      "alt_matches_fasta": 138,
+      "ref_matches_fasta": 392
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Skin_Not_Sun_Exposed_Suprapubic_neg.vcf.gz": {
+      "alt_matches_fasta": 348,
+      "ref_matches_fasta": 1554
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Skin_Not_Sun_Exposed_Suprapubic_pos.vcf.gz": {
+      "alt_matches_fasta": 445,
+      "ref_matches_fasta": 1457
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Skin_Sun_Exposed_Lower_leg_neg.vcf.gz": {
+      "alt_matches_fasta": 492,
+      "ref_matches_fasta": 1872
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Skin_Sun_Exposed_Lower_leg_pos.vcf.gz": {
+      "alt_matches_fasta": 534,
+      "ref_matches_fasta": 1830
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Small_Intestine_Terminal_Ileum_neg.vcf.gz": {
+      "alt_matches_fasta": 72,
+      "ref_matches_fasta": 316
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Small_Intestine_Terminal_Ileum_pos.vcf.gz": {
+      "alt_matches_fasta": 97,
+      "ref_matches_fasta": 291
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Spleen_neg.vcf.gz": {
+      "alt_matches_fasta": 237,
+      "ref_matches_fasta": 719
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Spleen_pos.vcf.gz": {
+      "alt_matches_fasta": 229,
+      "ref_matches_fasta": 727
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Stomach_neg.vcf.gz": {
+      "alt_matches_fasta": 136,
+      "ref_matches_fasta": 640
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Stomach_pos.vcf.gz": {
+      "alt_matches_fasta": 184,
+      "ref_matches_fasta": 592
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Testis_neg.vcf.gz": {
+      "alt_matches_fasta": 444,
+      "ref_matches_fasta": 1577
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Testis_pos.vcf.gz": {
+      "alt_matches_fasta": 507,
+      "ref_matches_fasta": 1514
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Thyroid_neg.vcf.gz": {
+      "alt_matches_fasta": 551,
+      "ref_matches_fasta": 2110
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Thyroid_pos.vcf.gz": {
+      "alt_matches_fasta": 609,
+      "ref_matches_fasta": 2052
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Uterus_neg.vcf.gz": {
+      "alt_matches_fasta": 29,
+      "ref_matches_fasta": 160
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Uterus_pos.vcf.gz": {
+      "alt_matches_fasta": 49,
+      "ref_matches_fasta": 140
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Vagina_neg.vcf.gz": {
+      "alt_matches_fasta": 29,
+      "ref_matches_fasta": 139
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Vagina_pos.vcf.gz": {
+      "alt_matches_fasta": 42,
+      "ref_matches_fasta": 126
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Whole_Blood_neg.vcf.gz": {
+      "alt_matches_fasta": 382,
+      "ref_matches_fasta": 1514
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/eqtl/Whole_Blood_pos.vcf.gz": {
+      "alt_matches_fasta": 433,
+      "ref_matches_fasta": 1463
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/ipaqtl/neg_merge.vcf.gz": {
+      "ref_matches_fasta": 3843
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/ipaqtl/pos_merge.vcf.gz": {
+      "ref_matches_fasta": 1077
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/paqtl/neg_merge.vcf.gz": {
+      "ref_matches_fasta": 4314
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/paqtl/pos_merge.vcf.gz": {
+      "ref_matches_fasta": 1128
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/sqtl/neg_merge.vcf.gz": {
+      "ref_matches_fasta": 16396
+    },
+    "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data/sqtl/pos_merge.vcf.gz": {
+      "ref_matches_fasta": 4217
+    }
+  },
+  "by_task_occurrences": {
+    "eqtl": {
+      "alt_matches_fasta": 21518,
+      "ref_matches_fasta": 76404
+    },
+    "ipaqtl": {
+      "ref_matches_fasta": 4920
+    },
+    "paqtl": {
+      "ref_matches_fasta": 5442
+    },
+    "sqtl": {
+      "ref_matches_fasta": 20613
+    }
+  },
+  "by_task_split_occurrences": {
+    "eqtl/neg": {
+      "alt_matches_fasta": 9890,
+      "ref_matches_fasta": 39071
+    },
+    "eqtl/pos": {
+      "alt_matches_fasta": 11628,
+      "ref_matches_fasta": 37333
+    },
+    "ipaqtl/neg": {
+      "ref_matches_fasta": 3843
+    },
+    "ipaqtl/pos": {
+      "ref_matches_fasta": 1077
+    },
+    "paqtl/neg": {
+      "ref_matches_fasta": 4314
+    },
+    "paqtl/pos": {
+      "ref_matches_fasta": 1128
+    },
+    "sqtl/neg": {
+      "ref_matches_fasta": 16396
+    },
+    "sqtl/pos": {
+      "ref_matches_fasta": 4217
+    }
+  },
+  "by_task_unique_variants": {
+    "eqtl": {
+      "alt_matches_fasta": 13108,
+      "ref_matches_fasta": 45302
+    },
+    "ipaqtl": {
+      "ref_matches_fasta": 4920
+    },
+    "paqtl": {
+      "ref_matches_fasta": 5442
+    },
+    "sqtl": {
+      "ref_matches_fasta": 20613
+    }
+  },
+  "data_dir": "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/data",
+  "exceptions_tsv": "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/reports/qtl_reference_audit/exceptions.tsv",
+  "fasta": "/data/yitian_workspace/DNA/benchmarks/qtl_Borzoi/reference/hg38/assembly/ucsc/hg38.fa",
+  "files": 104,
+  "record_occurrences": 128897,
+  "source_scope": "eQTL tissue *_pos/_neg VCFs and sQTL/paQTL/iPaQTL pos_merge/neg_merge VCFs used by the unified benchmark",
+  "status_occurrence_fraction": {
+    "alt_matches_fasta": 0.1669394943249261,
+    "ref_matches_fasta": 0.833060505675074
+  },
+  "status_occurrences": {
+    "alt_matches_fasta": 21518,
+    "ref_matches_fasta": 107379
+  },
+  "status_unique_variants": {
+    "alt_matches_fasta": 13108,
+    "ref_matches_fasta": 76277
+  },
+  "vcf_vs_variant_id_occurrences": {
+    "exact_ref_alt_swap": 21518,
+    "same_as_variant_id": 76404,
+    "variant_id_unparsed": 30975
+  }
+}

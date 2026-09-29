@@ -1,0 +1,11 @@
+Type	ClinicalSignificance	OriginSimple	Assembly	Chromosome	ReviewStatus	VariationID	PositionVCF	ReferenceAlleleVCF	AlternateAlleleVCF	ClinVar_label	gold_stars
+single nucleotide variant	Pathogenic	germline	GRCh38	11	criteria provided, multiple submitters, no conflicts	5	126275389	C	T	1.0	2.0
+single nucleotide variant	Likely pathogenic	germline	GRCh38	11	criteria provided, single submitter	6	126277517	A	G	1.1	1.0
+single nucleotide variant	Benign	germline	GRCh38	6	criteria provided, single submitter	14	26093008	G	A	0.0	1.0
+single nucleotide variant	Pathogenic/Likely pathogenic	germline	GRCh38	6	criteria provided, multiple submitters, no conflicts	19	26092916	A	C	1.1	2.0
+single nucleotide variant	Likely pathogenic	germline	GRCh38	2	criteria provided, single submitter	23	19933469	C	T	1.1	1.0
+single nucleotide variant	Pathogenic	germline	GRCh38	20	criteria provided, multiple submitters, no conflicts	27	25302322	G	A	1.0	2.0
+single nucleotide variant	Pathogenic	germline	GRCh38	10	criteria provided, multiple submitters, no conflicts	30	97611535	G	T	1.0	2.0
+single nucleotide variant	Pathogenic/Likely pathogenic	germline	GRCh38	10	criteria provided, multiple submitters, no conflicts	31	97598852	C	T	1.1	2.0
+single nucleotide variant	Pathogenic	germline	GRCh38	10	criteria provided, single submitter	33	97584912	G	C	1.0	1.0
+single nucleotide variant	Pathogenic/Likely pathogenic	germline	GRCh38	10	criteria provided, multiple submitters, no conflicts	34	97601925	T	G	1.1	2.0

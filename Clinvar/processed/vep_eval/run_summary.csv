@@ -1,0 +1,4 @@
+release,input,reference_valid_all_labels,reference_valid_exact_benign_pathogenic,duplicate_variant_key_rows
+2025-03,data/raw/variant_summary_2025-03.txt.gz,1284098,240351,0
+2026-02,data/raw/variant_summary_2026-02.txt.gz,1346005,242132,0
+2026-09-14,data/raw/variant_summary_latest_2026-09-14.txt.gz,1437296,245566,0

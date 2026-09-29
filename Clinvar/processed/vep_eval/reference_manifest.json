@@ -1,0 +1,33 @@
+{
+  "MANE": {
+    "path": "data/raw/MANE.GRCh38.v1.5.refseq_genomic.gff.gz",
+    "bytes": 8271212,
+    "sha256": "040f0d4056de2e9a416cd52bc20ff07ef403baadf5f5968faf188907893f6002"
+  },
+  "genome": {
+    "path": "data/raw/hg38.fa",
+    "bytes": 3273481150,
+    "sha256": "5be01555d98347fdb3714dc84c6f77c9d8bc774adcf32c6f7a8fa06f5baf5e51"
+  },
+  "genome_download": {
+    "path": "data/raw/hg38.fa.gz",
+    "bytes": 983659424,
+    "sha256": "c1dd87068c254eb53d944f71e51d1311964fce8de24d6fc0effc9c61c01527d4"
+  },
+  "fai": {
+    "path": "data/raw/hg38.fa.fai",
+    "bytes": 19381,
+    "sha256": "3b425de206296a5c8053023fa5ca61da43cfe78c1737c12e58c83367c7e83c21"
+  },
+  "ncbiRefSeq": {
+    "path": "data/raw/ncbiRefSeq.txt.gz",
+    "bytes": 7331668,
+    "sha256": "7d87cce75dbc8276f7f8f199d6851e831a2d7060895145cfcef3ca333eb1e611"
+  },
+  "source_notebook": {
+    "path": "VEP_ClinVar_Benchmarking_RefSeq.ipynb",
+    "bytes": 92329,
+    "sha256": "ba83644d335d1afbc41f55a13651cddc6e5980c86cbe3c2da6807dbfb4d1b60f"
+  },
+  "note": "Group rules transcribed from VEP_ClinVar_Benchmarking_RefSeq.ipynb; genome_download MD5 matches UCSC official 1c9dcaddfa41027f17cd8f7a82c7293b."
+}
