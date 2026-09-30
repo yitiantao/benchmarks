@@ -8,9 +8,11 @@ import pandas as pd
 
 from qtl_benchmark.visualize_four_models import (
     DNA_FM_NEW,
+    DNA_FM_NEW_BF16,
     MODEL_ORDER,
     ModelResultPaths,
     build_dna_fm_checkpoint_deltas,
+    build_dna_fm_precision_deltas,
     build_export_tables,
     build_ntv3_dna_fm_deltas,
     build_overview_table,
@@ -66,8 +68,8 @@ class VisualizeFourModelsTest(unittest.TestCase):
 
             self.assertEqual(set(tissue.model), set(MODEL_ORDER))
             self.assertEqual(set(tissue.organ_group), {"heart", "liver"})
-            self.assertEqual(len(organ), 10)
-            self.assertEqual(len(matched_export), 30)
+            self.assertEqual(len(organ), 12)
+            self.assertEqual(len(matched_export), 36)
             alpha_liver = organ[
                 (organ.model == "AlphaGenome") & (organ.organ_group == "liver")
             ].iloc[0]
@@ -106,7 +108,7 @@ class VisualizeFourModelsTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)
             paths = [self._write_model(root, model) for model in MODEL_ORDER]
-            new_path = next(path for path in paths if path.name == DNA_FM_NEW)
+            new_path = next(path for path in paths if path.name == DNA_FM_NEW_BF16)
             new_eqtl = pd.read_csv(new_path.eqtl, sep="\t")
             new_eqtl.loc[new_eqtl.tissue == "Liver", "auroc_sign"] = 0.55
             new_eqtl.to_csv(new_path.eqtl, sep="\t", index=False)
@@ -127,7 +129,34 @@ class VisualizeFourModelsTest(unittest.TestCase):
                 {"step150000_auroc_sign", "step340000_auroc_sign"},
             )
 
-    def test_rejects_missing_fifth_result_set(self) -> None:
+    def test_precision_delta_is_fp32_minus_bf16(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            paths = [self._write_model(root, model) for model in MODEL_ORDER]
+            fp32_path = next(path for path in paths if path.name == DNA_FM_NEW)
+            fp32_eqtl = pd.read_csv(fp32_path.eqtl, sep="\t")
+            fp32_eqtl.loc[fp32_eqtl.tissue == "Liver", "auroc_sign"] = 0.75
+            fp32_eqtl.to_csv(fp32_path.eqtl, sep="\t", index=False)
+
+            eqtl, matched = load_metric_tables(paths)
+            tissue, organ, matched_export = build_export_tables(eqtl, matched)
+            tissue_delta, organ_delta, matched_delta = build_dna_fm_precision_deltas(
+                tissue, organ, matched_export
+            )
+
+            liver = tissue_delta[tissue_delta.tissue == "Liver"].iloc[0]
+            self.assertAlmostEqual(liver.bf16_auroc_sign, 0.6)
+            self.assertAlmostEqual(liver.fp32_auroc_sign, 0.75)
+            self.assertAlmostEqual(liver.delta_auroc_sign, 0.15)
+            self.assertTrue((matched_delta.delta_auroc_mean == 0).all())
+            self.assertAlmostEqual(
+                organ_delta[organ_delta.organ_group == "liver"]
+                .iloc[0]
+                .delta_auroc_sign,
+                0.15,
+            )
+
+    def test_rejects_missing_result_sets(self) -> None:
         with tempfile.TemporaryDirectory() as temp_dir:
             root = Path(temp_dir)
             paths = [self._write_model(root, model) for model in MODEL_ORDER[:3]]

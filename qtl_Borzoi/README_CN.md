@@ -28,8 +28,8 @@ qtl_Borzoi/
 
 ## 当前四模型的权重存放路径
 
-下面对应本仓库四个零参数 `all_*_qtl.sh` 入口。五套结果图还会同时读取历史 DNA-FM
-step150000 结果。路径是**模型权重**，
+下面对应本仓库四个零参数 `all_*_qtl.sh` 入口。六套结果图还会同时读取历史 DNA-FM
+step150000 BF16 和 step340000 BF16 结果，并与最新 step340000 FP32 结果并列。路径是**模型权重**，
 不是 `outputs/` 下的 benchmark 预测或指标；除特别说明外均以本仓库根目录为基准。
 
 | 模型 | 当前配置使用的权重位置 | 配置/入口 |
@@ -54,9 +54,9 @@ NTv3 的 gated 权重、pre/post 两条打分路线、独立环境及运行限�
 [`docs/ntv3_qtl.md`](docs/ntv3_qtl.md)。
 AlphaGenome 与 Borzoi eQTL 的共享 subset、tissue 粒度对齐、输入审计和统一指标比较见
 [`docs/eqtl_model_comparison.md`](docs/eqtl_model_comparison.md)。
-AlphaGenome、Borzoi、NTv3 和新旧两个 DNA-FM checkpoint 的四类 QTL 柱状图及一键绘图入口见
+AlphaGenome、Borzoi、NTv3，以及 DNA-FM 新旧 checkpoint/精度运行的四类 QTL 图见
 [`docs/qtl_visualization.md`](docs/qtl_visualization.md)；当前命令为
-`./scripts/plot_five_result_qtl.sh`。
+`./scripts/plot_six_result_qtl.sh`。
 
 ## 统一框架（推荐入口）
 

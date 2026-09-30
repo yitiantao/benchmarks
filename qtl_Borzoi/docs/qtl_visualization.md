@@ -1,35 +1,38 @@
-# 五套 QTL 结果可视化
+# 六套 QTL 结果可视化
 
-一键脚本固定比较以下五套 `max_2000` 结果：
+一键脚本固定比较以下六套 `max_2000` 结果：
 
 1. AlphaGenome all folds
 2. Borzoi replicate 0
 3. NTv3 100M post-training
-4. DNA-FM 100M post-training step 150000（旧 checkpoint）
-5. DNA-FM 100M post-training step 340000（新 checkpoint；目录名 `step_0034000`）
+4. DNA-FM 100M post-training step 150000（BF16）
+5. DNA-FM 100M post-training step 340000（BF16 历史运行）
+6. DNA-FM 100M post-training step 340000（最新 FP32 运行；目录名 `step_0034000`）
 
-step340000 的默认绘图输入是 `outputs/dna_fm_step_0034000_all_qtl` 下由当前 FP32 正式配置
-生成的结果。旧 `outputs/dna_fm_step_0034000_smoke` 中的 BF16 结果仅作历史保留，不会再被
-一键绘图入口默认读取。切换精度后需先重新运行 `./scripts/all_dna_fm_qtl.sh`。
+最新 step340000 FP32 输入来自 `outputs/dna_fm_step_0034000_fp32_smoke`；旧 BF16 输入来自
+`outputs/dna_fm_step_0034000_smoke`。两者使用同一 checkpoint 和 evaluator，因而可以单独审计
+精度设置带来的指标差异。
 
 在仓库根目录运行，不需要参数：
 
 ```bash
-./scripts/plot_five_result_qtl.sh
+./scripts/plot_six_result_qtl.sh
 ```
 
-旧命令 `./scripts/plot_four_model_qtl.sh` 仍是兼容别名。结果写入
-`outputs/five_result_qtl_plots/`：
+旧命令 `./scripts/plot_five_result_qtl.sh` 和 `./scripts/plot_four_model_qtl.sh` 仍是兼容别名。
+结果写入 `outputs/six_result_qtl_plots/`：
 
 | 文件 | 内容 |
 |---|---|
-| `all_qtl_overview.{png,pdf}` | 五套结果在 eQTL、sQTL、paQTL、iPaQTL 上的 AUROC 总览 |
-| `eqtl_by_organ.{png,pdf}` | eQTL 按 broad organ group 的五套结果、四项指标柱状图 |
-| `eqtl_by_tissue.{png,pdf}` | eQTL 按全部 49 个 GTEx tissue 的五套结果柱状图 |
-| `matched_qtl_by_distance.{png,pdf}` | 五套结果在 sQTL、paQTL、iPaQTL 全部匹配距离下的 AUROC/AUPRC |
-| `dna_fm_checkpoint_overview.{png,pdf}` | 新旧 DNA-FM checkpoint 四任务直接比较，柱顶为 `step340000 − step150000` |
+| `all_qtl_overview.{png,pdf}` | 六套结果在 eQTL、sQTL、paQTL、iPaQTL 上的 AUROC 总览 |
+| `eqtl_by_organ.{png,pdf}` | eQTL 按 broad organ group 的六套结果、四项指标柱状图 |
+| `eqtl_by_tissue.{png,pdf}` | eQTL 按全部 49 个 GTEx tissue 的六套结果柱状图 |
+| `matched_qtl_by_distance.{png,pdf}` | 六套结果在 sQTL、paQTL、iPaQTL 全部匹配距离下的 AUROC/AUPRC |
+| `dna_fm_checkpoint_overview.{png,pdf}` | BF16 下新旧 DNA-FM checkpoint 四任务比较 |
 | `dna_fm_checkpoint_eqtl_delta_by_{organ,tissue}.{png,pdf}` | 新旧 checkpoint 的 eQTL 配对差值 |
 | `dna_fm_checkpoint_matched_qtl_delta.{png,pdf}` | 新旧 checkpoint 的 matched-QTL AUROC/AUPRC 配对差值 |
+| `dna_fm_step340000_precision_overview.{png,pdf}` | 同一 step340000 的 FP32 与 BF16 四任务比较 |
+| `dna_fm_step340000_precision_*_delta*.{png,pdf}` | 同一 checkpoint 下 `FP32 − BF16` 配对差值 |
 | `ntv3_vs_dna_fm_step340000_overview.{png,pdf}` | NTv3 与新 DNA-FM checkpoint 的四任务直接比较 |
 | `ntv3_vs_dna_fm_step340000_eqtl_by_{organ,tissue}.{png,pdf}` | NTv3 与新 checkpoint 的 eQTL 并排比较 |
 | `ntv3_vs_dna_fm_step340000_matched_qtl_by_distance.{png,pdf}` | NTv3 与新 checkpoint 的 matched-QTL 并排比较 |
@@ -37,8 +40,9 @@ step340000 的默认绘图输入是 `outputs/dna_fm_step_0034000_all_qtl` 下由
 | `eqtl_by_tissue.tsv` | 49 tissue 绘图数据 |
 | `eqtl_by_organ.tsv` | broad organ 汇总绘图数据 |
 | `matched_qtl_by_distance.tsv` | 其余三类 QTL 绘图数据及误差 |
-| `all_qtl_overview.tsv` | 总览图中五套结果、四个任务的精确 AUROC 数值 |
-| `dna_fm_checkpoint_*.tsv` | 两个 DNA-FM checkpoint 的原值及 `step340000 − step150000` 差值 |
+| `all_qtl_overview.tsv` | 总览图中六套结果、四个任务的精确 AUROC 数值 |
+| `dna_fm_checkpoint_*.tsv` | BF16 下两个 DNA-FM checkpoint 的原值及差值 |
+| `dna_fm_step340000_precision_*.tsv` | step340000 的 BF16、FP32 原值及 `FP32 − BF16` 差值 |
 | `ntv3_vs_dna_fm_step340000_*.tsv` | NTv3、新 DNA-FM 原值和 `step340000 − NTv3` 差值 |
 | `manifest.json` | 模型、输入文件和汇总口径 |
 
@@ -58,7 +62,7 @@ AlphaGenome 使用精确 GTEx tissue tracks；Borzoi、NTv3 和 DNA-FM 使用相
 
 ## 新旧 DNA-FM checkpoint 专项图
 
-checkpoint 专项图直接比较红色的 step150000 与紫色的 step340000。差值统一定义为：
+checkpoint 专项图固定在 BF16 内比较 step150000 与 step340000，避免混入精度设置变化：
 
 ```text
 Δ metric = metric(step340000) - metric(step150000)
@@ -67,13 +71,23 @@ checkpoint 专项图直接比较红色的 step150000 与紫色的 step340000。�
 正值表示新 checkpoint 更高，负值表示旧 checkpoint 更高。eQTL 差值按同一 tissue 或 organ
 严格配对，matched-QTL 差值按同一 task 和 matching distance 严格配对。
 
-## NTv3 与新 DNA-FM 专项图
+## step340000 精度专项图
 
-专项图以两根并排柱作为主视图：同一个 organ、tissue 或 distance 下，绿色是 NTv3，紫色是
-DNA-FM step340000。另保留差值图作为辅助视图，其差值统一定义：
+精度专项图固定 checkpoint 为 step340000，差值统一定义为：
 
 ```text
-Δ metric = metric(DNA-FM step340000) - metric(NTv3)
+Δ metric = metric(FP32) - metric(BF16)
+```
+
+因此它反映推理精度配置差异，不应解释成训练步数带来的变化。
+
+## NTv3 与新 DNA-FM 专项图
+
+专项图以两根并排柱作为主视图：同一个 organ、tissue 或 distance 下比较 NTv3 与最新的
+DNA-FM step340000 FP32。另保留差值图作为辅助视图，其差值统一定义：
+
+```text
+Δ metric = metric(DNA-FM step340000 FP32) - metric(NTv3)
 ```
 
 紫色正值表示新 DNA-FM 的该项公共 metric 更高，绿色负值表示 NTv3 更高。这里相减的是同一

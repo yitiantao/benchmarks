@@ -1,0 +1,19 @@
+{
+  "name": "DNA-FM-100M-post-step150000-FP32",
+  "root_dir": ".",
+  "source_root": "/data/pengcheng_workspace/DNA_FM/DNA_NTv3/outputs/posttraining_phase1_100m_matrix_dp8_val20_norm_20260917T081513Z/code",
+  "checkpoint_path": "/data/yitian_workspace/DNA/benchmarks/dna-fm-checkpoints/model.safetensors",
+  "checkpoint_sha256": "47b7ff5d48332cc193bcdb7602beecb6d80b4c0000f801ed5358de05199873e0",
+  "run_config_path": "/data/pengcheng_workspace/DNA_FM/DNA_NTv3/outputs/posttraining_phase1_100m_matrix_dp8_val20_norm_20260917T081513Z/config.yaml",
+  "run_config_sha256": "735891265b9526b773dd46f1a7a8f68a7b018ac98a18a9157f6299bfe62ed2b3",
+  "fasta_path": "reference/hg38/assembly/ucsc/hg38.fa",
+  "gtf_path": "reference/hg38/genes/gencode41/gencode41_basic_nort.gtf",
+  "sequence_length": 131072,
+  "species": "human",
+  "device": "cuda",
+  "mixed_precision": "float32",
+  "strict_reference": true,
+  "aggregation": "max_abs",
+  "eqtl_dataset": "gtex",
+  "eqtl_fallback_datasets": ["encode_v3"]
+}

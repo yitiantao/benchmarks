@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create publication-ready comparisons for five formal QTL result sets."""
+"""Create publication-ready comparisons for six QTL result sets."""
 
 from __future__ import annotations
 
@@ -15,15 +15,24 @@ import pandas as pd
 from .models.borzoi import TISSUE_KEYWORDS
 
 
-DNA_FM_OLD = "DNA-FM step150000"
-DNA_FM_NEW = "DNA-FM step340000"
-MODEL_ORDER = ("AlphaGenome", "Borzoi", "NTv3", DNA_FM_OLD, DNA_FM_NEW)
+DNA_FM_OLD = "DNA-FM step150000 BF16"
+DNA_FM_NEW_BF16 = "DNA-FM step340000 BF16"
+DNA_FM_NEW = "DNA-FM step340000 FP32"
+MODEL_ORDER = (
+    "AlphaGenome",
+    "Borzoi",
+    "NTv3",
+    DNA_FM_OLD,
+    DNA_FM_NEW_BF16,
+    DNA_FM_NEW,
+)
 MODEL_COLORS = {
     "AlphaGenome": "#4C78A8",
     "Borzoi": "#F58518",
     "NTv3": "#54A24B",
     DNA_FM_OLD: "#E45756",
-    DNA_FM_NEW: "#B279A2",
+    DNA_FM_NEW_BF16: "#B279A2",
+    DNA_FM_NEW: "#7A5195",
 }
 EQTL_METRICS = {
     "auroc_sign": "Direction AUROC",
@@ -67,9 +76,13 @@ def default_result_paths(root: Path) -> tuple[ModelResultPaths, ...]:
     )
     ntv3 = outputs / "ntv3_100m_post_all_qtl/max_2000/ntv3-100m-post"
     dna_fm_old = outputs / "dna_fm_all_qtl/max_2000/DNA-FM-100M-post-step150000"
+    dna_fm_new_bf16 = (
+        outputs
+        / "dna_fm_step_0034000_smoke/max_2000/DNA-FM-100M-post-step340000"
+    )
     dna_fm_new = (
         outputs
-        / "dna_fm_step_0034000_all_qtl/max_2000/DNA-FM-100M-post-step340000"
+        / "dna_fm_step_0034000_fp32_smoke/max_2000/DNA-FM-100M-post-step340000"
     )
 
     def unified_model(name: str, base: Path) -> ModelResultPaths:
@@ -92,6 +105,7 @@ def default_result_paths(root: Path) -> tuple[ModelResultPaths, ...]:
         ),
         unified_model("NTv3", ntv3),
         unified_model(DNA_FM_OLD, dna_fm_old),
+        unified_model(DNA_FM_NEW_BF16, dna_fm_new_bf16),
         unified_model(DNA_FM_NEW, dna_fm_new),
     )
 
@@ -109,7 +123,7 @@ def _read_metrics(path: Path, required: set[str]) -> pd.DataFrame:
 def load_metric_tables(
     paths: Iterable[ModelResultPaths],
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Load and validate all five result sets' eQTL and matched-QTL metrics."""
+    """Load and validate all six result sets' eQTL and matched-QTL metrics."""
     paths = tuple(paths)
     names = tuple(item.name for item in paths)
     if names != MODEL_ORDER:
@@ -304,12 +318,39 @@ def build_dna_fm_checkpoint_deltas(
     eqtl_organ: pd.DataFrame,
     matched: pd.DataFrame,
 ) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
-    """Return paired step340000 minus step150000 metric differences."""
+    """Return paired BF16 step340000 minus BF16 step150000 differences."""
     options = {
         "baseline_model": DNA_FM_OLD,
-        "comparison_model": DNA_FM_NEW,
+        "comparison_model": DNA_FM_NEW_BF16,
         "baseline_prefix": "step150000",
         "comparison_prefix": "step340000",
+    }
+    tissue_delta = _paired_model_delta(
+        eqtl_tissue, ["organ_group", "tissue"], EQTL_METRICS, **options
+    )
+    organ_delta = _paired_model_delta(
+        eqtl_organ, ["organ_group"], EQTL_METRICS, **options
+    )
+    matched_delta = _paired_model_delta(
+        matched,
+        ["task", "max_distance"],
+        ["auroc_mean", "auprc_mean"],
+        **options,
+    )
+    return tissue_delta, organ_delta, matched_delta
+
+
+def build_dna_fm_precision_deltas(
+    eqtl_tissue: pd.DataFrame,
+    eqtl_organ: pd.DataFrame,
+    matched: pd.DataFrame,
+) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """Return paired FP32 minus BF16 differences at step340000."""
+    options = {
+        "baseline_model": DNA_FM_NEW_BF16,
+        "comparison_model": DNA_FM_NEW,
+        "baseline_prefix": "bf16",
+        "comparison_prefix": "fp32",
     }
     tissue_delta = _paired_model_delta(
         eqtl_tissue, ["organ_group", "tissue"], EQTL_METRICS, **options
@@ -416,7 +457,7 @@ def plot_overview(
     ax.axhline(0.5, color="#555555", linestyle="--", linewidth=0.9)
     ax.set_ylim(0.45, 1.0)
     ax.set_ylabel("AUROC")
-    ax.set_title("Five-result QTL benchmark overview", pad=30)
+    ax.set_title("Six-result QTL benchmark overview", pad=30)
     ax.text(
         0.5,
         1.01,
@@ -426,7 +467,7 @@ def plot_overview(
         color="#555555",
         ha="center",
     )
-    ax.legend(ncol=5, loc="upper center", bbox_to_anchor=(0.5, -0.12), frameon=False)
+    ax.legend(ncol=3, loc="upper center", bbox_to_anchor=(0.5, -0.12), frameon=False)
     figure.subplots_adjust(bottom=0.22)
     _save_figure(figure, output_dir, "all_qtl_overview")
     plt.close(figure)
@@ -454,7 +495,7 @@ def _plot_eqtl_grid(
     figure.legend(
         handles,
         labels,
-        ncol=5,
+        ncol=3,
         loc="upper center",
         bbox_to_anchor=(0.5, 0.985),
         frameon=False,
@@ -516,7 +557,7 @@ def plot_matched_qtl(matched: pd.DataFrame, output_dir: Path) -> None:
     figure.legend(
         handles,
         labels,
-        ncol=5,
+        ncol=3,
         loc="upper center",
         bbox_to_anchor=(0.5, 0.985),
         frameon=False,
@@ -840,12 +881,14 @@ def plot_dna_fm_checkpoint_overview(
     """Plot the two DNA-FM checkpoints with new-minus-old annotations."""
     plt = _pyplot()
     overview = build_overview_table(eqtl_tissue, matched)
-    overview = overview[overview.model.isin({DNA_FM_OLD, DNA_FM_NEW})]
+    overview = overview[overview.model.isin({DNA_FM_OLD, DNA_FM_NEW_BF16})]
     categories = ["eQTL", "sQTL", "paQTL", "iPaQTL"]
     x = np.arange(len(categories), dtype=float)
     width = 0.36
     figure, ax = plt.subplots(figsize=(11, 6.2))
-    for offset, model in zip((-width / 2, width / 2), (DNA_FM_OLD, DNA_FM_NEW)):
+    for offset, model in zip(
+        (-width / 2, width / 2), (DNA_FM_OLD, DNA_FM_NEW_BF16)
+    ):
         selected = (
             overview[overview.model == model].set_index("benchmark").reindex(categories)
         )
@@ -863,7 +906,7 @@ def plot_dna_fm_checkpoint_overview(
         ["benchmark"],
         ["value"],
         baseline_model=DNA_FM_OLD,
-        comparison_model=DNA_FM_NEW,
+        comparison_model=DNA_FM_NEW_BF16,
         baseline_prefix="step150000",
         comparison_prefix="step340000",
     ).set_index("benchmark").reindex(categories)
@@ -885,7 +928,7 @@ def plot_dna_fm_checkpoint_overview(
     ax.text(
         0.5,
         1.01,
-        "Δ = step340000 − step150000; eQTL uses tissue-macro causal AUROC; matched QTL uses 10 kb",
+        "BF16 only; Δ = step340000 − step150000; eQTL is tissue-macro causal AUROC; matched QTL is 10 kb",
         transform=ax.transAxes,
         fontsize=9,
         color="#555555",
@@ -907,7 +950,7 @@ def plot_dna_fm_checkpoint_differences(
     """Plot step340000-minus-step150000 paired metric differences."""
     delta_description = "Metric difference Δ = step340000 − step150000"
     options = {
-        "positive_model": DNA_FM_NEW,
+        "positive_model": DNA_FM_NEW_BF16,
         "negative_model": DNA_FM_OLD,
         "delta_description": delta_description,
     }
@@ -939,7 +982,7 @@ def plot_dna_fm_checkpoint_differences(
             ax = axes[row, column]
             values = selected[f"delta_{metric}"].to_numpy()
             colors = [
-                MODEL_COLORS[DNA_FM_NEW]
+                MODEL_COLORS[DNA_FM_NEW_BF16]
                 if value >= 0
                 else MODEL_COLORS[DNA_FM_OLD]
                 for value in values
@@ -962,6 +1005,137 @@ def plot_dna_fm_checkpoint_differences(
     plt.close(figure)
 
 
+def plot_dna_fm_precision_overview(
+    eqtl_tissue: pd.DataFrame, matched: pd.DataFrame, output_dir: Path
+) -> None:
+    """Plot step340000 BF16 and FP32 values with FP32-minus-BF16 labels."""
+    plt = _pyplot()
+    overview = build_overview_table(eqtl_tissue, matched)
+    overview = overview[overview.model.isin({DNA_FM_NEW_BF16, DNA_FM_NEW})]
+    categories = ["eQTL", "sQTL", "paQTL", "iPaQTL"]
+    x = np.arange(len(categories), dtype=float)
+    width = 0.36
+    figure, ax = plt.subplots(figsize=(11, 6.2))
+    for offset, model in zip(
+        (-width / 2, width / 2), (DNA_FM_NEW_BF16, DNA_FM_NEW)
+    ):
+        selected = (
+            overview[overview.model == model].set_index("benchmark").reindex(categories)
+        )
+        ax.bar(
+            x + offset,
+            selected.value.to_numpy(),
+            width=width,
+            label=model,
+            color=MODEL_COLORS[model],
+            edgecolor="white",
+            linewidth=0.4,
+        )
+    paired = _paired_model_delta(
+        overview,
+        ["benchmark"],
+        ["value"],
+        baseline_model=DNA_FM_NEW_BF16,
+        comparison_model=DNA_FM_NEW,
+        baseline_prefix="bf16",
+        comparison_prefix="fp32",
+    ).set_index("benchmark").reindex(categories)
+    for index, row in enumerate(paired.itertuples()):
+        ax.text(
+            x[index],
+            max(row.bf16_value, row.fp32_value) + 0.012,
+            f"Δ {row.delta_value:+.3f}",
+            ha="center",
+            va="bottom",
+            fontsize=9,
+            color="#333333",
+        )
+    ax.axhline(0.5, color="#555555", linestyle="--", linewidth=0.9)
+    ax.set_xticks(x, categories)
+    ax.set_ylim(0.45, 0.9)
+    ax.set_ylabel("AUROC")
+    ax.set_title("DNA-FM step340000 precision comparison", pad=30)
+    ax.text(
+        0.5,
+        1.01,
+        "Δ = FP32 − BF16; eQTL is tissue-macro causal AUROC; matched QTL is 10 kb",
+        transform=ax.transAxes,
+        fontsize=9,
+        color="#555555",
+        ha="center",
+    )
+    ax.grid(axis="y", alpha=0.22, linewidth=0.6)
+    ax.legend(ncol=2, loc="upper center", bbox_to_anchor=(0.5, -0.12), frameon=False)
+    figure.subplots_adjust(bottom=0.22)
+    _save_figure(figure, output_dir, "dna_fm_step340000_precision_overview")
+    plt.close(figure)
+
+
+def plot_dna_fm_precision_differences(
+    tissue_delta: pd.DataFrame,
+    organ_delta: pd.DataFrame,
+    matched_delta: pd.DataFrame,
+    output_dir: Path,
+) -> None:
+    """Plot step340000 FP32-minus-BF16 paired metric differences."""
+    options = {
+        "positive_model": DNA_FM_NEW,
+        "negative_model": DNA_FM_NEW_BF16,
+        "delta_description": "Metric difference Δ = FP32 − BF16 at step340000",
+    }
+    _plot_eqtl_delta_grid(
+        organ_delta,
+        "organ_group",
+        output_dir,
+        "dna_fm_step340000_precision_eqtl_delta_by_organ",
+        "DNA-FM step340000 precision differences by broad organ group",
+        **options,
+    )
+    _plot_eqtl_delta_grid(
+        tissue_delta,
+        "tissue",
+        output_dir,
+        "dna_fm_step340000_precision_eqtl_delta_by_tissue",
+        "DNA-FM step340000 precision differences across 49 GTEx tissues",
+        **options,
+    )
+
+    plt = _pyplot()
+    figure, axes = plt.subplots(3, 2, figsize=(15, 14), sharey=False)
+    for row, task in enumerate(MATCHED_TASKS):
+        task_table = matched_delta[matched_delta.task == task]
+        distances = sorted(task_table.max_distance.unique())
+        labels = [f"{distance / 1000:g} kb" for distance in distances]
+        selected = task_table.set_index("max_distance").reindex(distances)
+        for column, (metric, metric_title) in enumerate(MATCHED_METRICS.items()):
+            ax = axes[row, column]
+            values = selected[f"delta_{metric}"].to_numpy()
+            colors = [
+                MODEL_COLORS[DNA_FM_NEW]
+                if value >= 0
+                else MODEL_COLORS[DNA_FM_NEW_BF16]
+                for value in values
+            ]
+            ax.bar(labels, values, width=0.72, color=colors, edgecolor="white")
+            ax.axhline(0.0, color="#333333", linewidth=0.9)
+            limit = max(float(np.nanmax(np.abs(values))) * 1.18, 0.01)
+            ax.set_ylim(-limit, limit)
+            ax.grid(axis="y", alpha=0.22, linewidth=0.6)
+            ax.set_ylabel(f"Δ {metric_title}")
+            ax.set_title(f"{task.upper()} — {metric_title}")
+    figure.suptitle(
+        "DNA-FM step340000 precision differences (Δ = FP32 − BF16)",
+        fontsize=16,
+        fontweight="bold",
+        y=1.0,
+    )
+    figure.tight_layout(rect=(0, 0, 1, 0.97))
+    _save_figure(
+        figure, output_dir, "dna_fm_step340000_precision_matched_qtl_delta"
+    )
+    plt.close(figure)
+
+
 def write_outputs(root: Path, output_dir: Path) -> dict[str, object]:
     paths = default_result_paths(root)
     eqtl, matched = load_metric_tables(paths)
@@ -972,6 +1146,9 @@ def write_outputs(root: Path, output_dir: Path) -> dict[str, object]:
     checkpoint_tissue_delta, checkpoint_organ_delta, checkpoint_matched_delta = (
         build_dna_fm_checkpoint_deltas(eqtl_tissue, eqtl_organ, matched_export)
     )
+    precision_tissue_delta, precision_organ_delta, precision_matched_delta = (
+        build_dna_fm_precision_deltas(eqtl_tissue, eqtl_organ, matched_export)
+    )
     overview = build_overview_table(eqtl_tissue, matched_export)
     ntv3_dna_fm_overview = _paired_model_delta(overview, ["benchmark"], ["value"])
     checkpoint_overview = _paired_model_delta(
@@ -979,9 +1156,18 @@ def write_outputs(root: Path, output_dir: Path) -> dict[str, object]:
         ["benchmark"],
         ["value"],
         baseline_model=DNA_FM_OLD,
-        comparison_model=DNA_FM_NEW,
+        comparison_model=DNA_FM_NEW_BF16,
         baseline_prefix="step150000",
         comparison_prefix="step340000",
+    )
+    precision_overview = _paired_model_delta(
+        overview,
+        ["benchmark"],
+        ["value"],
+        baseline_model=DNA_FM_NEW_BF16,
+        comparison_model=DNA_FM_NEW,
+        baseline_prefix="bf16",
+        comparison_prefix="fp32",
     )
     output_dir.mkdir(parents=True, exist_ok=True)
     eqtl_tissue.to_csv(output_dir / "eqtl_by_tissue.tsv", sep="\t", index=False)
@@ -1026,6 +1212,26 @@ def write_outputs(root: Path, output_dir: Path) -> dict[str, object]:
         sep="\t",
         index=False,
     )
+    precision_overview.to_csv(
+        output_dir / "dna_fm_step340000_precision_overview.tsv",
+        sep="\t",
+        index=False,
+    )
+    precision_organ_delta.to_csv(
+        output_dir / "dna_fm_step340000_precision_eqtl_delta_by_organ.tsv",
+        sep="\t",
+        index=False,
+    )
+    precision_tissue_delta.to_csv(
+        output_dir / "dna_fm_step340000_precision_eqtl_delta_by_tissue.tsv",
+        sep="\t",
+        index=False,
+    )
+    precision_matched_delta.to_csv(
+        output_dir / "dna_fm_step340000_precision_matched_qtl_delta.tsv",
+        sep="\t",
+        index=False,
+    )
 
     plot_overview(eqtl_tissue, matched_export, output_dir)
     plot_eqtl(eqtl_tissue, eqtl_organ, output_dir)
@@ -1040,14 +1246,22 @@ def write_outputs(root: Path, output_dir: Path) -> dict[str, object]:
         checkpoint_matched_delta,
         output_dir,
     )
+    plot_dna_fm_precision_overview(eqtl_tissue, matched_export, output_dir)
+    plot_dna_fm_precision_differences(
+        precision_tissue_delta,
+        precision_organ_delta,
+        precision_matched_delta,
+        output_dir,
+    )
 
     manifest = {
         "models": list(MODEL_ORDER),
         "n_eqtl_tissues": int(eqtl_tissue.tissue.nunique()),
         "n_eqtl_organ_groups": int(eqtl_organ.organ_group.nunique()),
         "eqtl_organ_aggregation": "unweighted macro mean of tissue metrics",
-        "ntv3_vs_dna_fm_delta": "DNA-FM step340000 metric minus NTv3 metric",
-        "dna_fm_checkpoint_delta": "step340000 metric minus step150000 metric",
+        "ntv3_vs_dna_fm_delta": "DNA-FM step340000 FP32 metric minus NTv3 metric",
+        "dna_fm_checkpoint_delta": "BF16 step340000 metric minus BF16 step150000 metric",
+        "dna_fm_precision_delta": "step340000 FP32 metric minus step340000 BF16 metric",
         "overview": {
             "eqtl": "macro mean of tissue causal classification AUROC",
             "sqtl_paqtl_ipaqtl": "mean AUROC at the largest (10000 bp) matching distance",
@@ -1099,6 +1313,18 @@ def write_outputs(root: Path, output_dir: Path) -> dict[str, object]:
             "dna_fm_checkpoint_matched_qtl_delta.png",
             "dna_fm_checkpoint_matched_qtl_delta.pdf",
             "dna_fm_checkpoint_matched_qtl_delta.tsv",
+            "dna_fm_step340000_precision_overview.png",
+            "dna_fm_step340000_precision_overview.pdf",
+            "dna_fm_step340000_precision_overview.tsv",
+            "dna_fm_step340000_precision_eqtl_delta_by_organ.png",
+            "dna_fm_step340000_precision_eqtl_delta_by_organ.pdf",
+            "dna_fm_step340000_precision_eqtl_delta_by_organ.tsv",
+            "dna_fm_step340000_precision_eqtl_delta_by_tissue.png",
+            "dna_fm_step340000_precision_eqtl_delta_by_tissue.pdf",
+            "dna_fm_step340000_precision_eqtl_delta_by_tissue.tsv",
+            "dna_fm_step340000_precision_matched_qtl_delta.png",
+            "dna_fm_step340000_precision_matched_qtl_delta.pdf",
+            "dna_fm_step340000_precision_matched_qtl_delta.tsv",
             "manifest.json",
         ],
     }
@@ -1120,7 +1346,7 @@ def parse_args() -> argparse.Namespace:
         "--output-dir",
         type=Path,
         default=None,
-        help="Plot directory (default: <root>/outputs/five_result_qtl_plots)",
+        help="Plot directory (default: <root>/outputs/six_result_qtl_plots)",
     )
     return parser.parse_args()
 
@@ -1131,7 +1357,7 @@ def main() -> None:
     output_dir = (
         args.output_dir.expanduser().resolve()
         if args.output_dir is not None
-        else root / "outputs/five_result_qtl_plots"
+        else root / "outputs/six_result_qtl_plots"
     )
     manifest = write_outputs(root, output_dir)
     print(
